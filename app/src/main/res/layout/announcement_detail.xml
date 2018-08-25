@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/imageurl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:alpha="0.8"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:resizeMode="horizontal|vertical"
+            android:scaleType="fitXY"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/headertransparent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/back_button"
+                android:backgroundTint="#F0FFFF" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/transprent_bg">
+
+            <TextView
+                android:id="@+id/announcement_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Msg"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/titlebar"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/urlanouncement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <WebView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text=""
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/desc_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/readmore"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/desc_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:text="Read More"
+            android:textColor="#9f9f9f"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

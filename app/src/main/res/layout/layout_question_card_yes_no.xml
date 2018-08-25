@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/question_card_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layerlist_floating_shadow_layout"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/question_header_drag_image_view"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@null"
+                android:src="@drawable/line_icon"/>
+
+            <ImageButton
+                android:id="@+id/question_header_delete_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:src="@drawable/rubbish"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp">
+
+            <CustomClass.RobotoRegularEditText
+                android:id="@+id/question_title_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@null"
+                android:gravity="center|left"
+                android:hint="@string/question_title_hint"
+                android:inputType="textCapSentences"
+                android:textColorHint="#7A7A7A"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/question_yes_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_survey_polling_item_white_button"
+                    android:textColor="@drawable/selector_survey_polling_item_white_button_text_color"
+                    android:textAllCaps="false"
+                    android:text="@string/yes_text"/>
+
+                <Button
+                    android:id="@+id/question_no_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_survey_polling_item_white_button"
+                    android:textColor="@drawable/selector_survey_polling_item_white_button_text_color"
+                    android:textAllCaps="false"
+                    android:text="@string/no_text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

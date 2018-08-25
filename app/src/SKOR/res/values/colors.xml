@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="colors">
+        <item>@color/holo_blue_dark</item>
+        <item>@color/holo_yellow_dark</item>
+        <item>@color/holo_green_dark</item>
+        <item>@color/holo_purple_dark</item>
+        <item>@color/holo_red_dark</item>
+
+    </integer-array>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <integer-array name="pocket_bar_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+
+    <integer-array name="pocket_background_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+    <color name="ultra_dark">#29303F</color>
+    <color name="dark">#696E79</color>
+    <color name="ultra_dark_overlay">#0D29303F</color>
+    <color name="backgroundcolor">#EE4E24</color>
+    <color name="dialogColor">#FF5722</color>
+    <color name="red">#D54A22</color>
+    <color name="red_orange">#E74D23</color>
+    <color name="graylight">#FF9100</color>
+    <color name="pocket_color_1">#85edb9</color>
+    <color name="pocket_color_2">#34bdb7</color>
+    <color name="pocket_color_3">#ee4458</color>
+    <color name="pocket_color_4">#fcb74d</color>
+    <color name="bluecolor">#50c2ff</color>
+    <color name="skor_chat_divider">#c2c2c2</color>
+    <color name="skor_chat_online_indicator">#42D583</color>
+    <color name="skor_chat_gray_status">#9A9A9A</color>
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+    <color name="historyBordercolor">#B1ECED</color>
+    <color name="holo_blue_dark">#0099cc</color>
+    <color name="holo_yellow_dark">#ff8800</color>
+    <color name="holo_green_dark">#669900</color>
+    <color name="holo_purple_dark">#9933cc</color>
+    <color name="holo_red_dark">#cc0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="appBlack">#545454</color>
+    <color name="tab_highlight_gray">#e4e3e4</color>
+    <color name="tab_text_highlight_red">#e53638</color>
+    <color name="tab_gray">#d3d3d3</color>
+    <color name="tab_text_gray">#a4a4a4</color>
+    <color name="chat_text">#868686</color>
+    <color name="red_notification">#d54a22</color>
+    <color name="light_gray">#c4c4c4</color>
+    <color name="light_gray2">#AAAAAA</color>
+    <color name="light_gray3">#F4F4F4</color>
+    <color name="light_gray4">#EFEFEF</color>
+    <color name="light_gray5">#3E3E3E</color>
+    <color name="light_gray6">#EBEBEB</color>
+    <color name="light_gray7">#FAFAFA</color>
+    <color name="light_gray8">#B0B0B0</color>
+    <color name="light_gray9">#C0C0C0</color>
+    <color name="text_black">#282828</color>
+    <color name="text_black2">#303030</color>
+    <color name="chat_edit_text_gray">#7D7D7D</color>
+    <color name="light_blue">#E4F7FF</color>
+    <color name="black">#1D1D1D</color>
+    <color name="skor_orange">#2d3940</color>
+    <color name="bgApp">#f6f5f4</color>
+
+    <color name="hopbush">#CD67A8</color>
+    <color name="tabgrey">#8E8E8E</color>
+    <color name="tabblack">#000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#0bd48f</color>
+    <color name="progressbargrey">#EEEEEE</color>
+    <color name="progressbarbordercolor">#BDBDBD</color>
+
+    <color name="light_grey">#FAFAFA</color>
+    <color name="dark_grey">#F5F5F5</color>
+    <color name="challenge_btn_clr_bg">#3ED091</color>
+</resources>

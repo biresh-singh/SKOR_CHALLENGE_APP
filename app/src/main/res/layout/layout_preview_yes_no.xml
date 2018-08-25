@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/preview_item_layout"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="30dp"
+              android:background="@drawable/layerlist_survey_polling_question_layout">
+
+    <CustomClass.RobotoRegularTextView
+        android:id="@+id/preview_title_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/dummy_question_preview_label2"
+        android:textColor="#2E2E2E"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/preview_yes_no_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/preview_yes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/selector_survey_item_plain_checkbox"
+            android:button="@null"
+            android:textColor="@drawable/selector_survey_polling_item_white_checkbox_text_color"
+            android:text="@string/yes_text"
+            android:textAllCaps="false"/>
+
+        <RadioButton
+            android:id="@+id/preview_no_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/selector_survey_item_plain_checkbox"
+            android:button="@null"
+            android:textColor="@drawable/selector_survey_polling_item_white_checkbox_text_color"
+            android:text="@string/no_text"
+            android:textAllCaps="false"/>
+    </RadioGroup>
+
+</LinearLayout>

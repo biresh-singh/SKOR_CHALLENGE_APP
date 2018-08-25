@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:id="@+id/left_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/left_arrow"/>
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_arrow"/>
+
+    <LinearLayout
+        android:id="@+id/weeklayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:layout_weight="1">
+
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Su"
+                android:alpha="0.5"
+
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/firstday"
+                android:layout_width="25dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="1"
+
+
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mo"
+                android:alpha="0.5"
+
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/secondday"
+                android:layout_width="25dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="1"
+
+
+
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu"
+                android:alpha="0.5"
+
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/thirdday"
+                android:layout_width="25dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="1"
+
+
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We"
+                android:alpha="0.5"
+
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/fourthday"
+                android:layout_width="25dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="1"
+
+
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Th"
+                android:alpha="0.5"
+
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/fifthday"
+                android:layout_width="25dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="1"
+
+
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fr"
+                android:alpha="0.5"
+
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/sixthday"
+                android:layout_width="25dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="1"
+
+
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sa"
+                android:alpha="0.5"
+
+
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/seventhday"
+                android:layout_width="25dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="1"
+
+
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</LinearLayout>

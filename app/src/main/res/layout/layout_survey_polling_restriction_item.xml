@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/restriction_label"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:minWidth="80dp"
+        android:background="@drawable/shape_survey_restriction_item_blue"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/dummy_restriction_item_text"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

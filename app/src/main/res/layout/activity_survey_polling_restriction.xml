@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F4F4F4">
+
+            <ImageButton
+                android:id="@+id/back_image_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:scaleType="center"
+                android:src="@drawable/left_arrow"
+                android:tint="#4D4E4B"
+                android:onClick="onBackButtonClicked" />
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/header_title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/restriction_header_title"
+                android:textAllCaps="true"
+                android:textColor="#7A7A7A"
+                android:textSize="22sp" />
+
+            <CustomClass.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="@string/save_text"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="#9B9B9B"
+                android:textSize="16sp"
+                android:onClick="onSaveButtonClicked" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Gender -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layerlist_survey_polling_item_layout"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="25dp"
+                    android:orientation="vertical">
+
+                    <CustomClass.RobotoRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/gender_text"
+                        android:textColor="#4D4E4B"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/gender_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:checkedButton="@id/gender_all_radio_button">
+
+                        <RadioButton
+                            android:id="@+id/gender_all_radio_button"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:minWidth="80dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/survey_polling_flexbox_margin_right"
+                            android:background="@drawable/selector_survey_polling_item_white_checkbox"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/gender_all_text"
+                            android:textColor="@drawable/selector_survey_polling_item_checkbox_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/gender_male_radio_button"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:minWidth="80dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/survey_polling_flexbox_margin_right"
+                            android:background="@drawable/selector_survey_polling_item_white_checkbox"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/gender_male_text"
+                            android:textColor="@drawable/selector_survey_polling_item_checkbox_text_color"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/gender_female_radio_button"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:minWidth="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_survey_polling_item_white_checkbox"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/gender_female_text"
+                            android:textColor="@drawable/selector_survey_polling_item_checkbox_text_color"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <!-- Status -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layerlist_survey_polling_item_layout"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="25dp"
+                    android:orientation="vertical">
+
+                    <CustomClass.RobotoRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/status_text"
+                        android:textColor="#4D4E4B"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/status_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:checkedButton="@id/status_all_radio_button">
+
+                        <RadioButton
+                            android:id="@+id/status_all_radio_button"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:minWidth="80dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/survey_polling_flexbox_margin_right"
+                            android:background="@drawable/selector_survey_polling_item_white_checkbox"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/status_all_text"
+                            android:textColor="@drawable/selector_survey_polling_item_checkbox_text_color"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/status_single_radio_button"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:minWidth="80dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/survey_polling_flexbox_margin_right"
+                            android:background="@drawable/selector_survey_polling_item_white_checkbox"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/status_single_text"
+                            android:textColor="@drawable/selector_survey_polling_item_checkbox_text_color"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/status_married_radio_button"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:minWidth="80dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/survey_polling_flexbox_margin_right"
+                            android:background="@drawable/selector_survey_polling_item_white_checkbox"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/status_married_text"
+                            android:textColor="@drawable/selector_survey_polling_item_checkbox_text_color"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/status_divorced_radio_button"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:minWidth="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_survey_polling_item_white_checkbox"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/status_divorced_text"
+                            android:textColor="@drawable/selector_survey_polling_item_checkbox_text_color"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <!-- Age Range -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layerlist_survey_polling_item_layout"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp">
+
+                    <CustomClass.RobotoRegularTextView
+                        android:id="@+id/age_range_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/age_range_text"
+                        android:textColor="#4D4E4B"
+                        android:textSize="16sp" />
+
+                    <CustomClass.RobotoRegularTextView
+                        android:id="@+id/age_range_hint_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:text="@string/age_range_hint"
+                        android:textColor="#4D4E4B"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/age_range_label"
+                        android:layout_marginTop="20dp">
+
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/age_minimum_value_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/range_20_text"
+                            android:textColor="#4D4E4B"
+                            android:textSize="16sp" />
+
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/age_maximum_value_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/range_50_text"
+                            android:textColor="#4D4E4B"
+                            android:textSize="16sp" />
+
+                        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                            android:id="@+id/age_range_seekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/age_minimum_value_label"
+                            android:layout_toLeftOf="@id/age_maximum_value_label"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"
+                            app:corner_radius="10"
+                            app:min_value="20"
+                            app:max_value="50"
+                            app:gap="1"
+                            app:bar_color="#979797"
+                            app:bar_highlight_color="#0DD903"
+                            app:left_thumb_color="#48A7FF"
+                            app:right_thumb_color="#48A7FF"
+                            app:left_thumb_color_pressed="#48A7FF"
+                            app:right_thumb_color_pressed="#48A7FF"
+                            app:data_type="_integer"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:background="@drawable/layerlist_survey_polling_item_layout"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <CustomClass.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center|left"
+                            android:paddingLeft="20dp"
+                            android:text="Age Range"
+                            android:textColor="#7A7A7A"
+                            android:textSize="16sp" />
+
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/activity_choose_restriction_yearsOldTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center|left"
+                            android:paddingRight="20dp"
+                            android:text="20 - 50 Years Old"
+                            android:textColor="#7A7A7A"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/activity_choose_restriction_ageRange1TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="31dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="20"
+                            android:textColor="#7A7A7A"
+                            android:textSize="16sp" />
+
+                        <org.florescu.android.rangeseekbar.RangeSeekBar
+                            android:id="@+id/activity_choose_restriction_rangeSeekBar"
+                            android:layout_width="100dp"
+                            android:layout_height="31dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Single"
+                            android:textColor="#7A7A7A"
+                            android:textSize="16sp" />
+
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/activity_choose_restriction_ageRange2TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="31dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:text="50"
+                            android:textColor="#7A7A7A"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>-->
+
+                <!-- Department -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="25dp"
+                    android:orientation="vertical">
+
+                    <CustomClass.RobotoRegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/department_text"
+                        android:textColor="#4D4E4B"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/department_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.flexbox.FlexboxLayout
+                            android:id="@+id/department_flexbox_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:flexWrap="wrap"
+                            app:showDividerHorizontal="middle"
+                            app:dividerDrawableHorizontal="@drawable/shape_flex_layout_vertical_divider"
+                            app:alignItems="stretch"
+                            app:alignContent="stretch" >
+
+                            <CheckBox
+                                android:id="@+id/department_all_check_box"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:minWidth="80dp"
+                                android:layout_marginRight="@dimen/survey_polling_flexbox_margin_right"
+                                android:background="@drawable/selector_survey_polling_item_white_checkbox"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/department_all_text"
+                                android:textColor="@drawable/selector_survey_polling_item_checkbox_text_color"
+                                android:textSize="16sp" />
+
+                            <!--<include layout="@layout/layout_survey_polling_department_checkbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp" />
+
+                            <include layout="@layout/layout_survey_polling_department_checkbox"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginRight="10dp" />
+
+                            <include layout="@layout/layout_survey_polling_department_checkbox"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginRight="10dp" />-->
+
+                            <Button
+                                android:id="@+id/department_add_button"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:background="@drawable/selector_survey_polling_item_button"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="4dp"
+                                android:paddingBottom="4dp"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/category_plus_text"
+                                android:textColor="@drawable/selector_survey_polling_item_button_text_color"
+                                android:textSize="16sp"
+                                android:onClick="onDepartmentAddButtonClicked"/>
+
+                        </com.google.android.flexbox.FlexboxLayout>
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/shape_shadow_bottom"
+                android:alpha="0.3"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

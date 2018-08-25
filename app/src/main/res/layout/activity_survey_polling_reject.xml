@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F4F4F4">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/left_arrow"
+            android:tint="#4D4E4B"
+            android:onClick="onBackButtonClicked" />
+
+        <CustomClass.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/survey_polling_reject_header_title"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:textColor="#7A7A7A"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.3"
+            android:background="@drawable/shape_shadow_bottom" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layerlist_survey_polling_item_layout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp">
+
+            <ImageView
+                android:id="@+id/activity_survey_polling_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="19dp"
+                android:background="@color/white"
+                android:src="@drawable/polling_icon" />
+
+            <CustomClass.RobotoRegularTextView
+                android:id="@+id/activity_survey_polling_header_start_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/activity_survey_polling_image_view"
+                android:text="@string/polling_about_text" />
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/activity_survey_polling_header_end_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/activity_survey_polling_header_start_label"
+                android:text="Office Outing"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/survey_polling_title_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/dummy_question_preview_label1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#404040"/>
+
+        <TextView
+            android:id="@+id/survey_polling_creator_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/verify_request_by_time_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CustomClass.RobotoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="19dp"
+            android:text="Write your comment/reason of rejection"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:padding="5dp"
+            android:background="@drawable/square_grey"
+            android:layout_marginTop="17dp">
+
+            <CustomClass.RobotoRegularEditText
+                android:id="@+id/activity_survey_polling_reject_comment"
+                android:layout_width="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shape_survey_polling_item_red"
+            android:text="DONE"
+            android:onClick="onDoneButtonClicked"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

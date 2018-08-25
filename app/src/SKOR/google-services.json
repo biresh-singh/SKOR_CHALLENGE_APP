@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "456406577534",
+    "firebase_url": "https://skor-1eb56.firebaseio.com",
+    "project_id": "skor-1eb56",
+    "storage_bucket": "skor-1eb56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456406577534:android:47c2398b4a38aed9",
+        "android_client_info": {
+          "package_name": "com.root.skor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456406577534-ra4b85bsgr8cm791aoorug3dcp1vbdif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.root.skor",
+            "certificate_hash": "930551aa9944805302c95e38d7381f0ac44758f6"
+          }
+        },
+        {
+          "client_id": "456406577534-ngqcofhfkilmfa36rkgp4jrk12ukqpq0.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "456406577534-6chhhdck33k99jpilp3viassj8hsnl3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.root.skor",
+            "certificate_hash": "d1ed47f16e69e3870cdd92954778e5ef07c35065"
+          }
+        },
+        {
+          "client_id": "456406577534-dqogvpv0b6pkpasksobogccn67fm171m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.root.skor",
+            "certificate_hash": "3a0c510faacda74a5ef8ec712fc0378e678e44d4"
+          }
+        },
+        {
+          "client_id": "456406577534-uoe62hf8luq9a4cp8iuvekgld9jc73g1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.root.skor",
+            "certificate_hash": "10c7c5c9dd74b903e43e1054f2a038b30defb5f8"
+          }
+        },
+        {
+          "client_id": "456406577534-iinka5abcjskhado2icne797hhu5h34b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.root.skor",
+            "certificate_hash": "6439e905a346de1d694a56198e4d5c921a886c22"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456406577534-ngqcofhfkilmfa36rkgp4jrk12ukqpq0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "456406577534-m17lucpf1goee1r9js2j526h9iaia1mu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nava.skor",
+                "app_store_id": "1194390241"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

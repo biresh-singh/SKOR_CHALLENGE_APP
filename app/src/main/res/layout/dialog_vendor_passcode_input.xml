@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:id="@+id/logo"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:tint="@color/appBlack"
+                        android:src="@drawable/crossimage" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/vender_Pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="Vendor Passcode"
+                    android:textColor="#F37756"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="24dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:text="Please enter your passcode or scan QR Outlet. Ask the staff/cashier to help validate your rewards"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85"
+                    android:orientation="vertical"
+                    android:layout_marginRight="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/passcode_image"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/text1"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/lock" />
+                        </FrameLayout>
+
+                        <EditText
+                            android:id="@+id/pass_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/text1"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:hint="Enter Passcode"
+                            android:textColorHint="#D3D1D1"
+                            android:layout_marginLeft="8dp"
+                            android:maxLines="1"
+                            android:text=""
+                            android:background="@android:color/transparent"
+                            android:textSize="16sp"
+                            android:textColor="#333" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_gray"/>
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/qr_code_image"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text1"
+                        android:layout_gravity="center"
+                        android:src="@drawable/qrcode" />
+                </FrameLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/buttonbg1"
+                    android:layout_gravity="center_horizontal"
+                    android:text="SUBMIT"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

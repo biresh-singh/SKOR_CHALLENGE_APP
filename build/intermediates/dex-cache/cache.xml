@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="59a16a4a42d25b2c243dd1e8aea87d06895b4a06">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.4.0_618a89139f38e4f4ac2ee65bc4df97cfbe4c2e24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_a5378640dea358c679a222a4a53e5b6d54419d84/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a5db9a2dd46d84285ef737f65030b74b6e8ee2a4">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/io.fabric.sdk.android-fabric-1.3.10_68a041123e647c23a16a68412b6e417029754ad3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.8/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c9ef45dcbd082cd63aac09a5e2cd443adb5df837">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.crashlytics.sdk.android-crashlytics-core-2.3.8_7f83001860641a172d1105cf136097d9927e3e91/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/library-2.4.0_554f11f9617816b656d19ee92fe71e3232fe77af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ad5bb101ced4d3939225c9b57e5a3d81547c1fbb">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.crashlytics.sdk.android-beta-1.1.4_70d82a005703f72484cec466d08bcaf760775feb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/glide-3.7.0_6a6c9a854c689565cf49207ec623e53fc539151c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-base-9.4.0_63fd467a4f844ff0bda2f5b739cbc16eafa985b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.1.4/58ce41ef04e5b0821b9c3eb2387df515f10702d7/MPAndroidChart-v2.1.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="58ce41ef04e5b0821b9c3eb2387df515f10702d7">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/MPAndroidChart-v2.1.4_9520bec821b92043b040e038af10641937adb198/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-multidex-1.0.1_a14bffea0161c79ead78ea2e587ae0cdd8ca7cbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/internal_impl-25.0.0_19891f19f05c946247e569f36c5008def9f511bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.4.0_75e7c4be799a77f73c9ebcee5792240d74f0adb2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ece40b09e9d4d488bc270cf6af5a9af73bc1cfa3">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.4.0_5c2f412e43a5de34d848a7f7e5741bc2f36ca6b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/de.hdodenhof-circleimageview-2.0.0_9e3b85a8b6771a0d9d2b179f7c7a7425fc70d1db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e454c414a069241ee08444d187f2dd3a702596b5">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.4.0_eef3a700f8831d1710e334d7c4978d74fd5958de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.4.0_d8868447d6af0f6203bbf475fc3b390492356be3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0b060160e7daee343f5315b3da91b0ff2d7eed89">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-location-9.4.0_7bc9a562c97d74b4ce540a56a97be3b6469737ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="927e8ef5711b115b65b2f35495d77352be2b3c09">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/io.reactivex-rxandroid-1.2.0_3f3b1928f6332e0e22b24bb3cc00d84761d7d924/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/me.wangyuwei/LoadingiVew/1.0.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53adfe1bfd15de303673986ff80ad7b33f44c712">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/me.wangyuwei-LoadingiVew-1.0.5_508ed626cc7148dda1e69cd8ebbb361eae1fadfc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.mcxiaoke.viewpagerindicator/library/2.4.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09ed9344035830949d3501230e0a85ebb4708f7">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.mcxiaoke.viewpagerindicator-library-2.4.1_e3cc3d3970862ac4aa9147af6eafa6febf77218d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8197651ce1af4d89b47f4545cc720bc4f8611e7d">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.4.0_4e6173e27e9dca7a95aaaf7ec0ff0c2d2cdc15fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9af3b9b8114e685291aa00e6572b0a9131244956">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.crashlytics.sdk.android-answers-1.3.6_dcb88b0257bffd71aa74c83b5bbf33854bca0916/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_ea77102a82a5fc4a4c09d2533040e6a03c7963fe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/incremental-classes/AXA/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="79501c72d7af0301bd92e4f7b76861848937dcbb">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/instant-run-bootstrap_123ff86440cf32c9a4ceb0b3e5cbbaaee4b8f298/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.baoyz.swipemenulistview/library/1.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ec8378e8d7aa3104f60823e6350f2728d3609ba">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.baoyz.swipemenulistview-library-1.3.0_822cd50ce0d969478740202189a93681b2afcf60/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.nispok/snackbar/2.11.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d0db114dc90b3e192ba48d22421a9c47cfc01f00">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.nispok-snackbar-2.11.0_2402249e2e71f0c5c5f50bcd647d0fd0e3db808e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_dadb6463cddb6ec3850e119cc01bb4c37cbaa6b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd51b31890731591729f046d7a09c4fe4e483ed1">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.4.0_d1bc9dcc45f0b5a79e6408cf797786812260df40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/internal_impl-25.0.0_02909344f0f69d3ddcc11dbea47a961a976f394c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_fe8b14973dc029e63fa0fb72c4c9bbf0f52d921e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_3ecca9f43433a591385e9a0d10bd531533eee007/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-support-compat-25.0.0_d792159bfa974aab699ac003c947e6ca850547e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_8118e5c741b58e7a0ea2a104e6cdaba732b19075/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.4.0_1f86fd43bfc2cb7e9a0dcdb61a19d1d1b7d363a2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.firebase-firebase-iid-9.4.0_5e9aa75e2059a18047118d2824fed84cf5fc8826/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.theartofdev.edmodo/android-image-cropper/2.2.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4d744cf34c66c7e1a0b822bddbcbe4cc7f98ed72">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.theartofdev.edmodo-android-image-cropper-2.2.5_0905a99c321f4f430393d524c1a5ac619faea217/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.4.0_132f5b4d7324f80fceb2dd2a40ce3eb3714418f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b6d9b70f93bbeb872d0948bc064ae3f3f2bcbac">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.4.0_3efcb8821a49586554644376704f0a674fca91de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/android-async-http-1.4.9_7cda656639e0d44ac1a87935a89af2e1b7ce619f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.mcxiaoke.volley/library-aar/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.mcxiaoke.volley-library-aar-1.0.0_95db9176d6cd4788712df74d23febad377cd7b52/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="58c9f5ee817fdb8b658fd7455fadfb74119f7ee9">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.4.0_8a9561e23a537803caabae9cccfef4d177dde958/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-design-25.0.0_38242cdf14001aed60bd31498f2fab766b5b11d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/support-annotations-25.0.0_ff0d17ee519458ebfe27dae34859f31122ad7d20/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_9c6a3e1beda817fce8823082ce9441bda5a1ebb7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.6/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1bc8b9eff35f11b60b4b361dc9cc967432789f16">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/me.leolin-ShortcutBadger-1.1.6_a7e092470393fd46c7398904fafee9dc4fbd5695/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/internal_impl-25.0.0_99993ad18f2fc6fa2b063d8e15f5ad1729b19784/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-transition-25.0.0_b620578c56823faa8c23532bf648f31d4c59cd58/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.github.flavienlaurent.datetimepicker/library/0.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2fc859b7abb78d29169f6a582b45cbe1f3f1a4cc">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.github.flavienlaurent.datetimepicker-library-0.0.2_399ad15506481c5353aa437f2a902d51122ff485/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="611605b6b640c1558f9bdea41de8ff837ab68ca8">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.crashlytics.sdk.android-crashlytics-2.5.5_7b5439909b2e818878d4549a99ed4323ed323b5e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.4/3cc424c6eda381bf4aee40dc3ccdecc27b2106aa/rxjava-1.1.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3cc424c6eda381bf4aee40dc3ccdecc27b2106aa">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/rxjava-1.1.4_6671cda12f1595858cb8a7469af0bd850636511a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-support-v4-25.0.0_97eddd5d03015f9f7caaaabb5f932b466c95fb3e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/internal_impl-25.0.0_636dc3f708943ef2330ff0805f49c5caaac084bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/httpclient-4.3.6_6fed48d5edd5e8a177b705ffb6dfb3c780cddac9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.firebase-firebase-common-9.4.0_d9bac1d0defcf1b00a64ba1aa7e419ebd2d39603/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/incremental-runtime-classes/AXA/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1dcb92e877093a0edf3e312464f13901b368f386">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/instant-run_b00ce2d32bd9763e302616a80fbd7526209979b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_056bb3b51a3a97159aae25b020488103e6c90238/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/gson-2.3_9d8f09bac6315d289a6cbb655bcae2dc7aabc140/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/internal_impl-25.0.0_498066a2386a2b364224ad3f1fa3762511335b01/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.android.support-cardview-v7-25.0.0_71a4e16e4896fc95c07f08f7b8b88844f3f07274/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/dev.dworks.libs/astickyheader/0.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8e08e9c8ed4a880a1ab6f61183f958ff8d397192">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/dev.dworks.libs-astickyheader-0.1.0_a3032cb239e0677ac9c5480e0bab94ca1a60f13e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/ca.barrenechea.header-decor/header-decor/0.2.8/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d2e810bfb2bd0cc54c152bd07997da93d053c53">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/ca.barrenechea.header-decor-header-decor-0.2.8_33c8d208afbf7b1dd8b4e82fbc7afa7974e8e5e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/shilpi/newproject/skor-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4348dd26d83b56c2058b768222c3271bce911724">
+        <dex dex="/home/shilpi/newproject/skor-android/app/build/intermediates/transforms/dex/AXA/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.4.0_7f8e6613adf0cb605d098120f42f7a07dc7cf340/classes.dex" />
+    </item>
+
+</items>

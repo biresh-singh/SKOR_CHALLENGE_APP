@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">WeAxa</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="base_url">https://skorpoints.com/</string>
+    <!--<string name="base_url">https://staging.skorpoints.com/</string>-->
+     <!--<string name="base_url">http://skordev.com/</string>-->
+    <string name="description_zoom_touch_close">Expanded image (touch to close)</string>
+    <string name="gcm_product_id">335178046322</string>
+    <!--1033015016176-->
+    <string name="powerdbySkor">Powered by SKOR</string>
+    <string name="packagename">com.root.axa</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="map_key">AIzaSyC6wDr0cZvrDXvZNFN7Xy6lAOE6CaQpsFM</string>
+    <string name="action_example">Example action</string>
+    <string name="intent_message">Supported by WeAXA.</string>
+    <string name="action_settings">Settings</string>
+    <string name="mail">support@skorpoints.com</string>
+    <string name="phone">+6285891699999</string>
+    <string name="retake_pic">Retake Picture</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="newly_added_item">This is newly added item %d</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="openDrawer">openDrawer</string>
+    <string name="closeDrawer">closeDrawer</string>
+    <string name="thankYouNote">Thank you for redeeming your rewards. Enjoy Your Rewards. Should there be any questions or enquiries, please contact support@skorpoints.com or (WA) 0858.916.99999. Keep collecting your points and redeem interesting rewards.</string>
+    <string-array name="martial_sttaus">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+    </string-array>
+
+    <string name="save_draft_title">Save Draft</string>
+    <string name="save_draft_description">Your progress has been saved as draft</string>
+</resources>

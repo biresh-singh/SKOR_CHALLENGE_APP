@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F4F4F4">
+
+        <CustomClass.RobotoBoldTextView
+            android:id="@+id/header_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/create_survey_polling_done_header_title"
+            android:textAllCaps="true"
+            android:textColor="#7A7A7A"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/title_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/create_survey_done_title"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <CustomClass.RobotoRegularTextView
+                android:id="@+id/top_description_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/create_survey_done_top_description"
+                android:textSize="16sp"/>
+
+            <CustomClass.RobotoRegularTextView
+                android:id="@+id/bottom_description_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/create_survey_done_bottom_description"
+                android:textSize="16sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_survey_polling_item_red_button"
+                android:layout_marginBottom="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/done_text"
+                android:textSize="16sp"
+                android:textColor="@drawable/selector_survey_polling_item_red_button_text_color"
+                android:textStyle="bold"
+                android:onClick="onDoneButtonClicked" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/shape_shadow_bottom"
+            android:alpha="0.3"/>
+    </RelativeLayout>
+
+</LinearLayout>

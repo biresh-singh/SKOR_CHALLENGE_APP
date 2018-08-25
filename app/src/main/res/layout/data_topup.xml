@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="280dp">
+
+        <TextView
+            android:id="@+id/vender_Pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="Enter Customer Id Number"
+            android:textColor="#F37756"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#D1D1D1"
+                android:src="@drawable/crossimage" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/Customer_id_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vender_Pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Please Enter Customer Id \n to Redeem this Topup. "
+            android:textColor="#333"
+            android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/customer_id_image"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/Customer_id_Text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/popup" />
+        <TextView
+            android:id="@+id/mobile_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/vender_Pass"
+            android:layout_marginTop="40dp"
+            android:textColor="#333"
+           android:visibility="gone"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/customer_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Customer_id_Text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:hint="Enter Your Customer Id"
+            android:textColor="#333"
+            android:textColorHint="#D3D1D1" />
+
+
+
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/customer_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonbg1"
+            android:text="SUBMIT"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mobile_text1"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/buttonbg1"
+            android:text="CONFIRM"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/mobile_text1"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/confirm"
+            android:background="@drawable/cancel"
+            android:text="CANCEL"
+            android:textColor="#333"
+            android:textStyle="bold"
+
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

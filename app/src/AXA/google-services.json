@@ -1,0 +1,111 @@
+{
+
+
+  "project_info": {
+    "project_number": "335178046322",
+    "firebase_url": "https://axadrive-145411.firebaseio.com",
+    "project_id": "axadrive-145411",
+    "storage_bucket": "axadrive-145411.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335178046322:android:69b3278e9e03c4a1",
+        "android_client_info": {
+          "package_name": "com.root.axa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335178046322-lrndu5la6flsamiq27ij1s4sfeev4k7c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.root.axa",
+            "certificate_hash": "3A0C510FAACDA74A5EF8EC712FC0378E678E44D4"
+          }
+        },
+        {
+          "client_id": "335178046322-89ka2avoc899atb5cv8foo826fo9l79k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.root.axa",
+            "certificate_hash": "6439E905A346DE1D694A56198E4D5C921A886C22"
+          }
+        },
+        {
+          "client_id": "335178046322-bg73dobgbj07ld4mk9675ga7802t98h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1G7GJNlhrVIj-XJZCyJcirdELN6-Gq7Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335178046322-bg73dobgbj07ld4mk9675ga7802t98h5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+
+/*
+  "project_info": {
+    "project_number": "351435808104",
+    "firebase_url": "https://skor-7da97.firebaseio.com",
+    "project_id": "skor-7da97",
+    "storage_bucket": "skor-7da97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351435808104:android:47c2398b4a38aed9",
+        "android_client_info": {
+          "package_name": "com.root.skor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351435808104-u7048m64u947mcd9ueqjntjassd228bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0ZH8T3cRVohexQkinhnaLw8WyMbor52I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+*/
+
+
+
+}

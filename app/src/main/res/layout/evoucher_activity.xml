@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="280dp">
+
+        <TextView
+            android:id="@+id/vender_Pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="Enter Your Email"
+            android:textColor="#F37756"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:id="@+id/logo"
+            android:layout_alignParentRight="true"
+            android:layout_height="40dp">
+            <ImageView
+
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#D1D1D1"
+                android:src="@drawable/crossimage" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vender_Pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Please Enter Your Email "
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/passcode_image"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/popup" />
+
+        <EditText
+            android:id="@+id/pass_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:text=""
+            android:textColorHint="#D3D1D1"
+            android:textColor="#333" />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@drawable/buttonbg1"
+            android:layout_below="@+id/pass_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+
+            android:text="SUBMIT"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    </RelativeLayout>

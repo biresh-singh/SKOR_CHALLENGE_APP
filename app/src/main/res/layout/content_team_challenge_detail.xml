@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="activity.challenge.TeamChallengeDetailActivity"
+    tools:showIn="@layout/activity_team_challenge_details">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/llTakeChallenge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20sp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:alpha="0.3"
+                android:background="@drawable/shape_shadow_bottom" />
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/tvChallengeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:gravity="center"
+                android:hint="@string/runalongtogether"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <CustomClass.RobotoRegularTextView
+                android:id="@+id/tvTotalPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:hint="10,000 Stars"
+                android:textColor="@color/red"
+                android:textColorHint="@color/red"
+                android:textSize="20sp" />
+
+            <CustomClass.RobotoRegularTextView
+                android:id="@+id/tvTotalParticipants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textAllCaps="true"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center"
+                android:hint="1 Team = 5 Members"
+                android:textColor="@color/dark"
+                android:textColorHint="@color/dark"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:background="@color/white"
+                >
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvInvitedFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:layout_weight="50"
+                        >
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/tvDay1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:gravity="left"
+                            android:hint="12 Participants"
+                            android:textColor="@color/dark"
+                            android:textColorHint="@color/dark"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="normal"
+                            android:drawableLeft="@drawable/participants"
+                            android:drawablePadding="@dimen/_5sdp"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:layout_weight="50"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        >
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/tvCompletedStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:gravity="left"
+                            android:hint="1 -31 March 2018"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/dark"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="7sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/txtProgress"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_drawable_custom" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:gravity="center"
+                        android:layout_weight=".33"
+                        android:orientation="vertical">
+
+                        <CustomClass.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:text="0%"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="25sp" />
+
+                        <CustomClass.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Done"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_14ssp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@color/dark" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:gravity="center"
+                        android:layout_weight=".34"
+                        android:orientation="vertical">
+
+                        <CustomClass.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:text="0km"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="30sp" />
+
+                        <CustomClass.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Running"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_14ssp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@color/dark" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:gravity="center"
+                        android:layout_weight=".33"
+                        android:orientation="vertical">
+
+                        <CustomClass.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:text="0km"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="30sp" />
+
+                        <CustomClass.RobotoRegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your Running"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_14ssp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <CustomClass.RobotoRegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:gravity="center"
+                android:hint="Walk min 2000 steps/day in office area .ds dsd slkdnskdnskd sjkdsjkd sjkdbsjkdsjkd askjd sjkd sd ask "
+                android:textColor="@color/dark"
+                android:textColorHint="@color/dark"
+                android:textSize="15sp" />
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/tvCheckIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/take_challenge_background"
+                android:gravity="center"
+                android:text="@string/startwalking"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp"
+                android:textAllCaps="true"
+                android:layout_marginBottom="@dimen/_45sdp"
+                />
+
+
+
+
+        </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

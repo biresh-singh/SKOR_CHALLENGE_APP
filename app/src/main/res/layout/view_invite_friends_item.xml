@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/llItemPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:paddingLeft="@dimen/_10sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            >
+            <utils.CircleImageView
+                android:id="@+id/userimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yoga"
+                app:border_color="#FF9100"
+                app:border_width="2dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            >
+            <CustomClass.RobotoBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Biresh Singh"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:id="@+id/tvName"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="22"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            >
+            <RadioButton
+                android:id="@+id/rb_checkFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:gravity="right"
+
+                android:fontFamily="sans-serif"
+
+                android:textColor="@drawable/selector_survey_polling_item_red_button_text_color"
+
+
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_below="@+id/llItemPanel"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/shape_shadow_bottom" />
+</RelativeLayout>

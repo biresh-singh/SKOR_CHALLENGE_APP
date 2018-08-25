@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:mContext="fragment.EVoucherFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--E-VOUCHER HEADER-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+            <CustomClass.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="E-Voucher"
+                android:textAllCaps="true"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"/>
+            <FrameLayout
+                android:id="@+id/closeFrameLayout"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="24dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btn_x"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <!--VOUCHER DESCRIPTION-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/red_orange">
+            <CustomClass.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Tour les Jours 50.000 IDR"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <!--CONTENT-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--VOUCHER IMAGE-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="18dp">
+                <ImageView
+                    android:id="@+id/voucherImageView"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@color/red_orange"/>
+            </FrameLayout>
+
+            <!--VOUCHER EXPIRY DATE-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp">
+                <CustomClass.RobotoBoldTextView
+                    android:id="@+id/voucherExpiryTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"/>
+            </FrameLayout>
+
+            <!--VALIDATE CODE BUTTON-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="160dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/buttonbg1"
+                    android:text="VALIDATE CODE"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+            </FrameLayout>
+
+            <!--BARCODE-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp">
+                <ImageView
+                    android:id="@+id/barcodeImageView"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+
+            <!--HOW TO REDEEM-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/red_orange"
+                android:padding="8dp">
+                <CustomClass.RobotoRegularTextView
+                    android:id="@+id/howToTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

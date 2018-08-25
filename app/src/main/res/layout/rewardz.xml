@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rewardz_rootRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="REWARDS"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:id="@+id/menupanel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_drawer"
+                    android:backgroundTint="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/filter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/filter"
+                    android:backgroundTint="#000000" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="58dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/headerlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/header"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/yourRewards"
+                    android:layout_width="130dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/text_bg"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:text="YOUR REWARDS"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/allRewards"
+                    android:layout_width="130dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:text="ALL REWARDS"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#ABC1D8">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FAFAFA"
+                    android:paddingLeft="10dp">
+
+                    <EditText
+                        android:id="@+id/search_query"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:hint="Search"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000" />
+
+                    <ImageView
+                        android:id="@+id/go"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/search"
+                        android:backgroundTint="#000000" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/point_earned_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/lin"
+            android:background="@color/gplus_color_3">
+
+            <TextView
+                android:id="@+id/points_to_be_earned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textColor="#ffffff"
+
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/nearMeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_below="@+id/point_earned_lay"
+            android:background="#4db1f8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/near_me" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="9dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <utils.ArialNarrowTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:text="NEAR ME"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <utils.ArialNarrowTextView
+                        android:id="@+id/nearMeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="See food &amp; beverages stores near you"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/arrow_right1" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/selectCityRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nearMeLayout">
+
+            <FrameLayout
+                android:id="@+id/selectCityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#42d583">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="49dp"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/select_city" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="9dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <utils.ArialNarrowTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:text="SELECT CITY"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp" />
+
+                        <utils.ArialNarrowTextView
+                            android:id="@+id/selectCityText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="See food &amp; beverages stores in your city"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/selected_city_imageView"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/arrow_right1" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <ListView
+                android:id="@+id/selectCityListView"
+                android:layout_width="match_parent"
+                android:layout_height="259dp"
+                android:layout_below="@id/selectCityLayout"
+                android:background="#22bb63"
+                android:choiceMode="singleChoice"
+                android:listSelector="#22ac57">
+
+            </ListView>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rewardz_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/selectCityRelativeLayout">
+
+        </android.support.v7.widget.RecyclerView>
+        <!-- <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_alignParentBottom="true"
+             android:orientation="horizontal"
+             android:background="#2C3F48"
+             android:weightSum="1"
+             android:layout_height="40dp">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:text="  Total Points as of today"
+                 android:textColor="#ffffff"
+                 android:gravity="center"
+                 android:layout_weight=".5"
+                 android:textSize="14sp" />
+             <TextView
+                 android:id="@+id/total_points_of_today"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:textColor="#ffffff"
+                 android:layout_weight=".5"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="20dp"
+                 android:gravity="center"
+                 android:text="00 Pts"
+                 />
+         </RelativeLayout>-->
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/rewardz_cityFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="40dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rewardz_selectCityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Select City"
+                android:textSize="22sp" />
+
+            <ListView
+                android:id="@+id/selectCitynewListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:choiceMode="singleChoice"
+                android:divider="#FFFFFF"></ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/rewardz_cancelButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center"
+                        android:text="CANCEL"
+                        android:textColor="#2bbd63" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/rewardz_okButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:gravity="right|center"
+                        android:text="OK"
+                        android:textColor="#2bbd63" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>

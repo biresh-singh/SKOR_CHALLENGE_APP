@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/header_date_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:paddingLeft="10dp"
+        android:background="#a5a5a5"
+        android:textColor="#000000" />
+
+    <ListView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout">
+
+    </ListView>
+</LinearLayout>

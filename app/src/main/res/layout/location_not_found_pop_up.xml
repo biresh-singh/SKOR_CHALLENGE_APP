@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Location Alert"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:background="@drawable/header_bg"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:text="Location not found please switch on the location."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center|top"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:textColor="#ffffff"
+            android:background="@drawable/attending_background"
+            android:text="Cancel"/>
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/attending_background"
+            android:layout_marginRight="10dp"
+            android:text="OK"/>
+    </LinearLayout>
+</LinearLayout>

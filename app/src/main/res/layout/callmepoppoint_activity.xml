@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="280dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="REDEEM"
+            android:textColor="@color/gplus_color_4"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#D1D1D1"
+                android:src="@drawable/crossimage" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/vender_Pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text=""
+            android:textColor="#333"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/vender_Pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/buttonbg1"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/submit1"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/buttonbg1"
+            android:text="OK"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

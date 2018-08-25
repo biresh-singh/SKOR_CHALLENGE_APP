@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfdf"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_bg"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <utils.ArialRegularTextView
+            android:id="@+id/activity_call_recipientsNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:text="Alberta Mahimano"
+            android:textColor="#000000"/>
+
+        <FrameLayout
+            android:id="@+id/item_contacts_userPhotoFrameLayout"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/activity_call_recipientsPhotoImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@color/red_notification"/>
+            <TextView
+                android:id="@+id/activity_call_profilePictureTextView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:textSize="60sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:text="A"
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+        <utils.ArialRegularTextView
+            android:id="@+id/activity_calling_callStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calling..."
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/com_mixpanel_android_ic_megaphone"
+                android:tint="#000000"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/com_mixpanel_android_ic_megaphone"
+                android:tint="#000000"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/com_mixpanel_android_ic_megaphone"
+                android:tint="#000000"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

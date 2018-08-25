@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_question_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F4F4F4">
+
+            <ImageButton
+                android:id="@+id/back_image_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:scaleType="center"
+                android:src="@drawable/left_arrow"
+                android:tint="#4D4E4B"
+                android:onClick="onBackButtonClicked" />
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/header_title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/add_questions_header_title"
+                android:textAllCaps="true"
+                android:textColor="#7A7A7A"
+                android:textSize="22sp" />
+
+            <CustomClass.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="@string/save_text"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="#9B9B9B"
+                android:textSize="16sp"
+                android:onClick="onSaveButtonClicked" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/shape_shadow_bottom"
+                android:alpha="0.3"/>
+
+            <LinearLayout
+                android:id="@+id/question_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
+
+                <com.jmedeisis.draglinearlayout.DragLinearLayout
+                    android:id="@+id/question_card_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:visibility="visible">
+
+                    <!--<include layout="@layout/layout_question_card_option_list"/>
+                    <include layout="@layout/layout_question_card_yes_no"/>
+                    <include layout="@layout/layout_question_card_edit_text"/>-->
+                </com.jmedeisis.draglinearlayout.DragLinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_question_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:visibility="visible">
+
+                    <CheckBox
+                        android:id="@+id/add_question_check_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="45dp"
+                        android:button="@null"
+                        android:background="@drawable/selector_add_question_checkbox"
+                        android:text="@string/question_add_a_question"
+                        android:textColor="@drawable/selector_add_question_checkbox_text_color"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:gravity="left|center_vertical"
+                        android:onClick="onAddQuestionButtonClicked"/>
+
+                    <LinearLayout
+                        android:id="@+id/add_question_option_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginLeft="-3dp"
+                        android:layout_marginRight="-3dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/layerlist_floating_shadow_layout"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="3dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/question_multiple_choice_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/selector_add_question_item_button"
+                            android:text="@string/question_multiple_choice"
+                            android:textColor="@drawable/selector_survey_polling_item_white_button_text_color"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:gravity="left|center_vertical"
+                            android:onClick="onMultipleChoiceOptionClicked" />
+
+                        <Button
+                            android:id="@+id/question_multiple_choice_with_other_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/selector_add_question_item_button"
+                            android:text="@string/question_multiple_choice_with_other"
+                            android:textColor="@drawable/selector_survey_polling_item_white_button_text_color"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:gravity="left|center_vertical"
+                            android:onClick="onMutlipleChoiceWithOtherOptionClicked" />
+
+                        <Button
+                            android:id="@+id/question_yes_no_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/selector_add_question_item_button"
+                            android:text="@string/question_yes_no_question"
+                            android:textColor="@drawable/selector_survey_polling_item_white_button_text_color"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:gravity="left|center_vertical"
+                            android:onClick="onYesNoOptionClicked" />
+
+                        <Button
+                            android:id="@+id/question_select_one_or_more_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/selector_add_question_item_button"
+                            android:text="@string/question_select_one_or_more"
+                            android:textColor="@drawable/selector_survey_polling_item_white_button_text_color"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:gravity="left|center_vertical"
+                            android:onClick="onSelectOneOrMoreOptionClicked" />
+
+                        <Button
+                            android:id="@+id/question_text_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:background="@drawable/selector_add_question_item_button"
+                            android:text="@string/question_text_question"
+                            android:textColor="@drawable/selector_survey_polling_item_white_button_text_color"
+                            android:textAllCaps="false"
+                            android:textSize="16sp"
+                            android:gravity="left|center_vertical"
+                            android:onClick="onTextOptionClicked" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <CustomClass.RobotoRegularTextView
+                    android:id="@+id/question_reach_maximum_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/question_reach_maximum_survey_question"
+                    android:textColorHint="#7A7A7A"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

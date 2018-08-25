@@ -1,0 +1,242 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:mContext="activity.rewardz.NewVoucherDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--E-VOUCHER HEADER-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <CustomClass.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="E-Voucher"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:id="@+id/closeFrameLayout"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btn_x" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <!--CONTENT-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--VOUCHER DESCRIPTION-->
+                <RelativeLayout
+                    android:id="@+id/voucherNameRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/red_orange">
+
+                    <CustomClass.RobotoRegularTextView
+                        android:id="@+id/voucherNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <!--VOUCHER IMAGE-->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="18dp">
+
+                    <ImageView
+                        android:id="@+id/voucherImageView"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop" />
+                </FrameLayout>
+
+                <!--VOUCHER EXPIRY DATE-->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp">
+
+                    <CustomClass.RobotoBoldTextView
+                        android:id="@+id/voucherExpiryTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </FrameLayout>
+
+                <!--BARCODE-->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--BARCODE IMAGE-->
+                        <ImageView
+                            android:id="@+id/barcodeImageView"
+                            android:layout_width="200dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingTop="8dp"
+                            android:scaleType="centerCrop" />
+
+                        <!--BARCODE TEXT-->
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp">
+
+                            <CustomClass.RobotoRegularTextView
+                                android:id="@+id/barcodeTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/barcodeFrameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="14dp"
+                        android:alpha="0.6"
+                        android:background="@color/black"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="36dp"
+                        android:layout_marginRight="36dp">
+
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/completedTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:text="Completed"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/useDescriptionFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Please press the USED button to manage your E-voucher code which has been redeemed at the outlet"
+                        android:textColor="@color/black"/>
+                </FrameLayout>
+
+                <!--VALIDATE CODE BUTTON-->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/validateCodeButton"
+                        android:layout_width="160dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rounded_red_orange_background"
+                        android:text="VALIDATE CODE"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--HOW TO REDEEM-->
+
+                    <FrameLayout
+                        android:id="@+id/howToFrameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/red_orange"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp">
+
+                        <WebView
+                            android:id="@+id/howToWebView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </FrameLayout>
+
+                    <!--THANKS NOTE!-->
+                    <FrameLayout
+                        android:id="@+id/thanksNoteFrameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:padding="8dp"
+                        android:visibility="gone">
+
+                        <CustomClass.RobotoRegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/thankYouNote"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

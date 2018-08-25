@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:background="@null">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/dialog_bg_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/_25sdp">
+
+            <LinearLayout
+                android:id="@+id/llOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <CustomClass.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:text="@string/enterTodayPin"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <CustomClass.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="@string/WhichHasBeenProvidedInstructor"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_10sdp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="60"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+                        <EditText
+                            android:id="@+id/otp_tv_otp_1"
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_weight="15"
+
+                            android:digits="1234567890"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:background="@drawable/pin_border"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:longClickable="false"
+                            android:maxLength="1"
+                            android:nextFocusDown="@+id/otp_tv_otp_2"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/_20sdp"
+
+                            android:textAlignment="center"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/otp_tv_otp_2"
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_weight="15"
+
+                            android:digits="1234567890"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:longClickable="false"
+                            android:maxLength="1"
+                            android:nextFocusDown="@+id/otp_tv_otp_3"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/_20sdp"
+                            android:background="@drawable/pin_border"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textAlignment="center"
+                            />
+
+                        <EditText
+                            android:id="@+id/otp_tv_otp_3"
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_weight="15"
+
+                            android:digits="1234567890"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:longClickable="false"
+                            android:maxLength="1"
+                            android:nextFocusDown="@+id/otp_tv_otp_4"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/_20sdp"
+                            android:background="@drawable/pin_border"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textAlignment="center"
+                            />
+
+                        <EditText
+                            android:id="@+id/otp_tv_otp_4"
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_weight="15"
+
+                            android:digits="1234567890"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:longClickable="false"
+                            android:maxLength="1"
+                            android:textIsSelectable="false"
+                            android:textSize="@dimen/_20sdp"
+                            android:background="@drawable/pin_border"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textAlignment="center"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvSubmitPin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/shape_congratulation_find_qr_green"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:text="@string/submitPin"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:weightSum="60"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOtpCongrats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <CustomClass.RobotoBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:text="@string/Congratulations"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_16sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/check" />
+
+                <CustomClass.RobotoRegularTextView
+                    android:id="@+id/tvCongMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="@string/successfullyYogaClassChallenge"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tvDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/shape_congratulation_find_qr_green"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_40sdp"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/done"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textAllCaps="true"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@+id/app_bar"
+        app:layout_anchorGravity="bottom|center"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/imgCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_challenge_icon"
+
+
+
+            android:scaleType="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textSize="30sp"
+
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textAlignment="center"
+
+            android:id="@+id/challengeIcon"
+            android:layout_gravity="center"
+            app:layout_anchorGravity="bottom|center"
+
+            android:scaleType="center"
+            />
+        <!-- <TextView
+             android:text="Frame Demo"
+             android:textSize="30px"
+             android:textStyle="bold"
+             android:layout_height="fill_parent"
+             android:layout_width="fill_parent"
+             android:gravity="center"/>-->
+    </FrameLayout>
+</RelativeLayout>

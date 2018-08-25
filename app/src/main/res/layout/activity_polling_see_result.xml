@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/post_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layerlist_survey_polling_question_layout"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/post_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/post_text"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FF5B5B"
+            android:onClick="onPostCommentButtonClicked"/>
+
+        <CustomClass.RobotoRegularEditText
+            android:id="@+id/post_comment_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/post_button"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/write_your_comment_hint"
+            android:inputType="textCapSentences"
+            android:textColorHint="#7A7A7A"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/post_layout"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layerlist_survey_polling_item_layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <CheckBox
+                android:id="@+id/love_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_love_checkbox"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@drawable/selector_love_checkbox_text_color" />
+
+            <Button
+                android:id="@+id/view_all_comment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ic_comment_red"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/view_all_comment_text"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FF5B5B"
+                android:onClick="onViewAllCommentButtonClicked"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/survey_polling_comment_list_collapse_height"
+            android:orientation="vertical"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:visibility="visible"
+            android:stackFromBottom="true"
+            android:transcriptMode="normal"/>
+
+        <!--<RelativeLayout
+            android:id="@+id/comment_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/comment_image_view"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/default_user" />
+
+            <TextView
+                android:id="@+id/comment_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="18 Jan"
+                android:textColor="#B1B1B1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/comment_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/comment_image_view"
+                android:layout_toLeftOf="@id/comment_date_label"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Ali Limawanto"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/comment_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/comment_image_view"
+                android:layout_below="@id/comment_name_label"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Thank you for your votes!"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </RelativeLayout>-->
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/comment_layout"
+        android:fillViewport="true"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Toolbar -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#F4F4F4">
+
+                <ImageButton
+                    android:id="@+id/back_image_button"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:scaleType="center"
+                    android:src="@drawable/left_arrow"
+                    android:tint="#4D4E4B"
+                    android:onClick="onBackButtonClicked"/>
+
+                <CustomClass.RobotoBoldTextView
+                    android:id="@+id/header_title_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/polling_see_result_header_title"
+                    android:textAllCaps="true"
+                    android:textColor="#7A7A7A"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/polling_finish_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/survey_polling_green_color"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/polling_has_ended_text"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="30dp">
+
+                        <ImageView
+                            android:id="@+id/survey_polling_image_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/polling_icon"
+                            android:layout_centerVertical="true"
+                            android:background="@color/white"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/survey_polling_image_view">
+
+                            <CustomClass.RobotoRegularTextView
+                                android:id="@+id/survey_polling_header_start_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/polling_about_text"
+                                android:textSize="14sp" />
+
+                            <CustomClass.RobotoBoldTextView
+                                android:id="@+id/survey_polling_header_title_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Office Outing"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@id/survey_polling_header_start_label" />
+
+                            <CustomClass.RobotoRegularTextView
+                                android:id="@+id/survey_polling_date_posted_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/survey_polling_header_start_label"
+                                android:text="@string/posted_by_on_text"
+                                android:textSize="10sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="20dp"
+                        android:visibility="visible">
+
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/polling_title_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/dummy_question_preview_label1"
+                            android:textColor="#2E2E2E"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:id="@+id/polling_option_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!--<include layout="@layout/layout_see_polling_result_option"/>-->
+                        </LinearLayout>
+
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/vote_view_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/voted_view_text"
+                            android:textColor="#7A7A7A"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@drawable/shape_shadow_bottom"
+                    android:alpha="0.3"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

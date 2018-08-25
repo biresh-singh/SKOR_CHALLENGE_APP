@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/item_newcitylist_rootLinearLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/item_newcitylist_radioButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:buttonTint="#2bbd63"/>
+        <TextView
+            android:id="@+id/item_newcitylist_cityTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City1"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+</LinearLayout>

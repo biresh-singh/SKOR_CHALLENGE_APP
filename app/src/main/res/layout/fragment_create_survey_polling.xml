@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.CreateSurveyPollingFragment">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/question_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fragment_create_survey_polling_toolbarRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/fragment_create_survey_polling_toolbarTitleImageView"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/fragment_create_survey_polling_toolbarTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#545454"
+                android:textSize="20dp"
+                android:text="POLLING/SURVEY"/>
+
+            <LinearLayout
+                android:id="@+id/fragment_create_survey_polling_toolbarMenuPanelLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/fragment_create_survey_polling_toolbarMenuPanelImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_drawer"
+                    android:tint="#000000" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/skor_chat_divider"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/fragment_create_survey_polling_createSurveyButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/selector_survey_polling_item_layout"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/create_survey_text"
+            android:textAllCaps="false"
+            android:gravity="left|center_vertical"
+            android:textColor="@drawable/selector_survey_polling_item_layout_text_color"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/fragment_create_survey_polling_createPollingButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/selector_survey_polling_item_layout"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/create_polling_text"
+            android:textAllCaps="false"
+            android:gravity="left|center_vertical"
+            android:textColor="@drawable/selector_survey_polling_item_layout_text_color"
+            android:textSize="16sp"/>
+        <Button
+            android:id="@+id/fragment_create_survey_polling_mySurveyButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/selector_survey_polling_item_layout"
+            android:drawableRight="@drawable/ic_right_arrow"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/my_survey_text"
+            android:textAllCaps="false"
+            android:gravity="left|center_vertical"
+            android:textColor="@drawable/selector_survey_polling_item_layout_text_color"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:id="@+id/verify_request_layout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/selector_survey_polling_item_layout"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/verify_arrow_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+            <CustomClass.RobotoRegularTextView
+                android:id="@+id/verify_request_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/verify_request_text"
+                android:textColor="@drawable/selector_survey_polling_item_layout_text_color"
+                android:textSize="16sp" />
+
+            <CustomClass.RobotoRegularTextView
+                android:id="@+id/verify_request_number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:minWidth="24dp"
+                android:layout_toRightOf="@id/verify_request_label"
+                android:layout_toEndOf="@id/verify_request_label"
+                android:background="@drawable/shape_oval_red"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/shape_shadow_bottom"
+        android:alpha="0.3"/>
+</RelativeLayout>
+
+
+</FrameLayout>

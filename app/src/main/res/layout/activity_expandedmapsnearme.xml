@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEAR ME"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/toolbar_title" />
+        <LinearLayout
+            android:id="@+id/menupanel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_btn"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="58dp"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/point_earned_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/gplus_color_3"
+        android:layout_below="@+id/lin"
+        android:layout_height="35dp">
+        <TextView
+            android:id="@+id/activity_expandedmapsnearme_points_to_be_earned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text=""
+            />
+    </LinearLayout>
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/point_earned_lay"
+        android:id="@+id/activity_expandedmapsnearme_maps"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+</RelativeLayout>

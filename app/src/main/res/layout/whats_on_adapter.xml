@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentlayout"
+    android:background="#009688"
+    >
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+   >
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/trainingtcon"/>
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/header_image"
+        android:paddingLeft="12dp"
+        android:textColor="#ffffff"
+        android:textSize="19dp"
+        android:paddingTop="5dp"
+        android:text="Events and Training"/>
+
+    <TextView
+        android:id="@+id/all_items"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+
+
+        android:gravity="center"
+        android:background="@drawable/view_all"
+        android:text="VIEW ALL"/>
+
+    <TextView
+        android:id="@+id/defaulttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_title"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:text="No Appointment today"
+        android:textSize="14sp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="12dp"
+        android:layout_marginLeft="60dp"/>
+
+</RelativeLayout>
+
+
+</LinearLayout>

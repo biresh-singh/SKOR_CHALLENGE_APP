@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainlayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0F0F0F">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:background="#0F0F0F"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/back"
+            android:singleLine="true"
+            android:text="PHOTOS"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/toolbar_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_title"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/back"
+            android:text="PHOTOS"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/back1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/cross_icon" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagers"
+        android:background="#0F0F0F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar"
+        android:layout_centerInParent="true"
+        />
+
+
+
+
+
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:backgroundTint="#fff"
+        android:src="@android:drawable/ic_menu_share"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/externallayout"
+        android:layout_above="@+id/floatingActionButton"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            app:backgroundTint="#fff"
+            android:layout_above="@+id/whatsapp"
+            android:src="@drawable/twitter"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/instagram"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="#fff"
+            android:visibility="gone"
+            android:src="@drawable/whatsapp"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/facebook"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="#fff"
+            android:visibility="gone"
+            android:src="@drawable/instagram"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="#fff"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/facebook"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/bgApp">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:padding="@dimen/_10sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/left_arrow"
+                    android:tint="#000000" />
+
+                <CustomClass.RobotoBoldTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Invite Friends"
+                    android:textAllCaps="true"
+                    android:textSize="20sp" />
+
+                <CustomClass.RobotoRegularTextView
+                    android:id="@+id/tvNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:textColor="@color/blue"
+                    android:text="Next"
+                    android:textStyle="normal"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgApp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                >
+                    <EditText
+
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/lgtgrey_background_gray_stroke_rounded_corner"
+                android:hint="@string/funawardsearchhint"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:gravity="left"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#CECECE"
+                android:textSize="16sp"
+                android:layout_gravity="left"
+                android:text="Search name"
+                android:drawableLeft="@drawable/search"
+                android:drawableTint="@color/black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:foregroundTint="@color/black"
+
+                />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:alpha="0.3"
+                android:background="@drawable/shape_shadow_bottom" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:background="@color/white"
+                >
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvInvitedFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvFriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+
+                />
+            <CustomClass.RobotoRegularTextView
+                android:id="@+id/txtNoDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="No  Participant Available"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

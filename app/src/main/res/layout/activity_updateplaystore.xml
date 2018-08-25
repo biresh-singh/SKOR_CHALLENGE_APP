@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Update Available"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="@color/bluecolor"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/description"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is the a newer version of SKOR available. Update Now?"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+
+            <FrameLayout
+                android:id="@+id/update"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:background="#aeaeae"
+                android:layout_below="@+id/vender_Pass"
+                android:layout_alignTop="@+id/linearLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:background="#aeaeae"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/notnowFrameLayout"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:background="#aeaeae"
+                android:layout_below="@+id/vender_Pass"
+                android:layout_alignTop="@+id/linearLayout"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/notNowButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#b3b3b3"
+                    android:text="Not Now"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/mustUpdate"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="#aeaeae"
+            android:layout_below="@+id/vender_Pass"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                android:background="#aeaeae"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

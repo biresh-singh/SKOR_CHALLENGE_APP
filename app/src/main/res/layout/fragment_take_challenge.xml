@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/llTakeChallenge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:alpha="0.3"
+            android:background="@drawable/shape_shadow_bottom" />
+
+        <CustomClass.RobotoBoldTextView
+            android:id="@+id/tvChalengeTypeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:gravity="center"
+            android:hint="Treasure Hunt | Find QR Codes"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="@dimen/_18sdp" />
+
+        <CustomClass.RobotoRegularTextView
+            android:id="@+id/tvPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:hint="+100,000 Points"
+            android:textColor="@color/holo_blue_dark"
+            android:textColorHint="@color/holo_blue_dark"
+            android:textSize="@dimen/_25sdp"
+            />
+
+        <CustomClass.RobotoRegularTextView
+            android:id="@+id/tvParticipant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableLeft="@drawable/participants"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center"
+            android:textColor="@color/dark"
+            android:textColorHint="@color/dark"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="3"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/light_grey"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <CustomClass.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Target"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/dark"
+                    android:textSize="12sp" />
+
+                <CustomClass.RobotoBoldTextView
+                    android:id="@+id/tvChallengeTarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:hint="10 QR Code"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/dark_grey"
+                >
+
+                <CustomClass.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Challenge Days"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/dark"
+                    android:textSize="12sp" />
+
+                <CustomClass.RobotoBoldTextView
+                    android:id="@+id/tvChallengeDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:hint="1 DAY"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/light_grey"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <CustomClass.RobotoRegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Expires on"
+                    android:textColor="@color/dark"
+                    android:textColorHint="@color/dark"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center"
+                    />
+
+                <CustomClass.RobotoBoldTextView
+                    android:id="@+id/tvChallengeExpires"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:hint="27/04/18"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <CustomClass.RobotoRegularTextView
+            android:id="@+id/tvChallengeDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_25sdp"
+            android:gravity="center"
+            android:hint=""
+            android:textColor="@color/dark"
+            android:textColorHint="@color/dark"
+            android:textSize="15sp" />
+
+        <CustomClass.RobotoBoldTextView
+            android:id="@+id/tvTakeChallenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/take_challenge_background"
+            android:gravity="center"
+            android:hint="TAKE THIS CHALLENGE"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+</LinearLayout>

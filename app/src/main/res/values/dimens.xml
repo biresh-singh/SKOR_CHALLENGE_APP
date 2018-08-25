@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">290dp</dimen>
+    <dimen name="detail_backdrop_height">300dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="list_item_avatar_size">40dp</dimen>
+
+    <!-- Layout Question Preview -->
+    <dimen name="question_margin_top">5dp</dimen>
+    <dimen name="question_margin_bottom">2dp</dimen>
+
+    <!-- Layout Survey Polling Flexbox Item -->
+    <dimen name="survey_polling_flexbox_height">30dp</dimen>
+    <dimen name="survey_polling_flexbox_margin_right">5dp</dimen>
+    <dimen name="survey_polling_comment_list_collapse_height">70dp</dimen>
+    <dimen name="survey_polling_comment_list_expand_height">140dp</dimen>
+</resources>

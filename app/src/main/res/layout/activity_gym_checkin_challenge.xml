@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/bgApp">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:padding="@dimen/_10sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/left_arrow"
+                    android:tint="#000000" />
+
+                <CustomClass.RobotoBoldTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Check In"
+                    android:textAllCaps="true"
+                    android:textSize="20sp" />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgApp">
+                    <EditText
+
+                android:id="@+id/etSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/lgtgrey_background_gray_stroke_rounded_corner"
+                android:hint="@string/funawardsearchhint"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_horizontal"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#CECECE"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:text="Search the exact place of your location"
+                android:drawableLeft="@drawable/search"
+                android:drawableTint="@color/black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:foregroundTint="@color/black"
+                />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:alpha="0.3"
+                android:background="@drawable/shape_shadow_bottom" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_150sdp"
+                />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:weightSum="100"
+                 android:background="@color/bluecolor"
+                 android:paddingTop="@dimen/_5sdp"
+                 android:paddingBottom="@dimen/_5sdp"
+                 >
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="70"
+                     android:orientation="vertical"
+                     >
+                     <CustomClass.RobotoBoldTextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentLeft="true"
+                         android:layout_centerVertical="true"
+                         android:padding="@dimen/_7sdp"
+                         android:text="Cult Emar, Gurgaon"
+                         android:textColor="@color/white"
+                         android:textSize="16sp"
+                         android:textStyle="bold"
+                         />
+
+                     <CustomClass.RobotoRegularTextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentLeft="true"
+                         android:layout_centerVertical="true"
+                         android:paddingTop="@dimen/_3sdp"
+                         android:text="Iris Delhi, Veritas Business Suites, Adj Hotel Ibis, Off Golf Course Road, Sec - 53, Gurgaon (Delhi NCR)"
+                         android:paddingLeft="@dimen/_7sdp"
+                         android:textColor="@color/white"
+                         android:textSize="16sp"
+                         android:textStyle="normal"
+                         />
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="5"
+                     >
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="25"
+                     >
+                     <CustomClass.RobotoBoldTextView
+                         android:id="@+id/tvCheckIn"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:background="@drawable/take_challenge_background"
+                         android:gravity="center"
+                         android:text="@string/checkIn"
+                         android:paddingBottom="@dimen/_10sdp"
+                         android:paddingLeft="@dimen/_10sdp"
+                         android:paddingRight="@dimen/_10sdp"
+                         android:paddingTop="@dimen/_10sdp"
+                         android:textColor="@color/white"
+                         android:textColorHint="@color/white"
+                         android:textSize="14sp"
+                         android:textAllCaps="true"
+                         android:textAlignment="center"
+                         android:foregroundGravity="center_vertical"
+                         />
+                 </LinearLayout>
+
+             </LinearLayout>
+
+            <CustomClass.RobotoBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_7sdp"
+                android:text="Current company event at this place"
+                android:textColor="@color/appBlack"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:padding="@dimen/_7sdp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/checkin_big"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    >
+                    <CustomClass.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Check in to Gym"
+                        android:textColor="@color/appBlack"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        />
+                    <CustomClass.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:text="23 April 2018 - 27 April 2018"
+                        android:textColor="@color/appBlack"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        />
+                    <CustomClass.RobotoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:text="10 AM - 6 PM"
+                        android:textColor="@color/appBlack"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shape_shadow_bottom"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CustomClass.RobotoBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_7sdp"
+                        android:text="25 Colleagues have accept this challenge"
+                        android:textColor="@color/appBlack"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:padding="@dimen/_7sdp"
+                        android:src="@drawable/right_arrow"
+                        android:tint="#000000" />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/scrollHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llColleagues"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

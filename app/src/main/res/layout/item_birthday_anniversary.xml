@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_birthday_anniversary_rootLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="12dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_birthday_anniversary_rootRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@drawable/birthday_anniversary">
+
+        <ImageView
+            android:id="@+id/item_birthday_anniversary_photoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_profile" />
+
+        <CustomClass.RobotoBoldTextView
+            android:id="@+id/item_birthday_anniversary_descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="IT'S YOUR BIRTHDAY TODAY"
+            android:textColor="#E5A3A3"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ic_gift" />
+
+    </RelativeLayout>
+
+</LinearLayout>

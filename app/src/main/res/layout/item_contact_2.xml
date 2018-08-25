@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_contacts_rootRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <FrameLayout
+        android:id="@+id/item_contacts_userPhotoFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_contacts_userPhoto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="6dp"
+            android:src="@color/loading_yellow" />
+
+        <TextView
+            android:id="@+id/item_contacts_profilePictureTextView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="A"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/item_contacts_dividerView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_toRightOf="@+id/item_contacts_userPhotoFrameLayout"
+        android:background="@color/skor_chat_divider"
+        android:minWidth="251dp" />
+
+
+    <ImageView
+        android:id="@+id/item_contacts_phoneImageView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="23dp"
+        android:layout_toLeftOf="@+id/item_contacts_onlineIndicatorCircleImageView"
+        android:src="@drawable/ic_phone" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_contacts_onlineIndicatorCircleImageView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="16dp"
+        android:src="@color/skor_chat_divider" />
+
+
+    <TextView
+        android:id="@+id/item_contacts_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|left"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/item_contacts_userPhotoFrameLayout"
+        android:layout_weight="1"
+        android:text="Offline"
+        android:textColor="@color/skor_chat_gray_status"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/item_contacts_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item_contacts_onlineIndicatorCircleImageView"
+        android:layout_toEndOf="@+id/item_contacts_userPhotoFrameLayout"
+        android:layout_toRightOf="@+id/item_contacts_userPhotoFrameLayout"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/text_black"
+        android:textSize="15sp" />
+
+</RelativeLayout>

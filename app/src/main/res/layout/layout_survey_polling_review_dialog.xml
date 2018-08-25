@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif"
+        android:text="@string/review_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif"
+        android:text="@string/review_title_question"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/dialog_approve_button"
+            android:layout_width="156dp"
+            android:layout_height="36dp"
+            android:background="@drawable/selector_survey_polling_item_light_green_button"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/approve_icon"
+            android:fontFamily="sans-serif"
+            android:text="@string/approve_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@drawable/selector_survey_polling_item_light_green_button_text_color" />
+
+        <Button
+            android:id="@+id/dialog_edit_button"
+            android:layout_width="156dp"
+            android:layout_height="36dp"
+            android:background="@drawable/selector_survey_polling_item_blue_button"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/edit_icon"
+            android:fontFamily="sans-serif"
+            android:text="@string/edit_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@drawable/selector_survey_polling_item_blue_button_text_color" />
+
+        <Button
+            android:id="@+id/dialog_reject_button"
+            android:layout_width="156dp"
+            android:layout_height="36dp"
+            android:background="@drawable/selector_survey_polling_item_red_button"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/reject_icon"
+            android:fontFamily="sans-serif"
+            android:text="@string/reject_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@drawable/selector_survey_polling_item_red_button_text_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

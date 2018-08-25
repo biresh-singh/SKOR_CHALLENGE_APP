@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F4F4F4">
+
+            <ImageButton
+                android:id="@+id/back_image_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:scaleType="center"
+                android:src="@drawable/left_arrow"
+                android:tint="#4D4E4B"
+                android:onClick="onBackButtonClicked"/>
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/header_title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/polling_fill_header_title"
+                android:textAllCaps="true"
+                android:textColor="#7A7A7A"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/shape_shadow_bottom"
+                android:alpha="0.3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:id="@+id/survey_polling_image_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/survey_icon"
+                        android:layout_centerVertical="true"
+                        android:background="@color/white"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/survey_polling_image_view">
+
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/survey_polling_header_start_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/survey_about_text"
+                            android:textSize="14sp" />
+
+                        <CustomClass.RobotoBoldTextView
+                            android:id="@+id/survey_polling_header_title_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Office Outing"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/survey_polling_header_start_label" />
+
+                        <CustomClass.RobotoRegularTextView
+                            android:id="@+id/survey_polling_date_posted_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/survey_polling_header_start_label"
+                            android:text="Posted on 12 Jan 2017, 5:23 PM"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/survey_header_title_description_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="30dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <CustomClass.RobotoRegularTextView
+                        android:id="@+id/survey_title_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/dummy_preview_title"
+                        android:textColor="#454545"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <CustomClass.RobotoRegularTextView
+                        android:id="@+id/survey_description_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="35dp"
+                        android:text="@string/dummy_preview_description"
+                        android:textColor="#2E2E2E"
+                        android:textSize="16sp"
+                        android:lineSpacingExtra="2dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/question_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!--<include layout="@layout/layout_preview_option_list" />
+                    <include layout="@layout/layout_preview_yes_no" />
+                    <include layout="@layout/layout_preview_edit_text" />-->
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@drawable/selector_survey_polling_item_red_button"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/submit_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/selector_survey_polling_item_red_button_text_color"
+                    android:onClick="onSubmitButtonClicked" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

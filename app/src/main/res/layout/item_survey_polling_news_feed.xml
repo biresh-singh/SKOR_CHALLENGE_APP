@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/survey_polling_box_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_pink"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/survey_polling_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/survey_icon"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/survey_polling_image_view">
+
+                    <CustomClass.RobotoRegularTextView
+                        android:id="@+id/survey_polling_header_start_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/polling_about_text"
+                        android:textSize="14sp" />
+
+                    <CustomClass.RobotoBoldTextView
+                        android:id="@+id/survey_polling_header_title_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Office Outing"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@id/survey_polling_header_start_label" />
+
+                    <CustomClass.RobotoRegularTextView
+                        android:id="@+id/survey_polling_date_posted_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/survey_polling_header_start_label"
+                        android:text="@string/posted_on_text"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/survey_polling_title_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/dummy_preview_title"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <CustomClass.RobotoRegularTextView
+                android:id="@+id/survey_polling_description_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/dummy_preview_description"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <CustomClass.RobotoRegularTextView
+                    android:id="@+id/survey_polling_voted_viewed_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/survey_polling_button_layout"
+                    android:text="@string/voted_viewed_by_text"
+                    android:textSize="12sp" />
+
+                <CustomClass.RobotoBoldTextView
+                    android:id="@+id/survey_polling_point_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/get_x_pts_text"
+                    android:textStyle="bold"
+                    android:textColor="@color/survey_polling_green_color"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@id/survey_polling_button_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <Button
+                        android:id="@+id/survey_polling_see_result_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="5dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:background="@drawable/shape_survey_polling_item_green"
+                        android:text="@string/see_result_text"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/survey_polling_vote_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="5dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:background="@drawable/shape_survey_polling_item_green"
+                        android:text="@string/vote_poll_text"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/survey_polling_fill_survey_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="5dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:background="@drawable/shape_survey_polling_fill_survey"
+                        android:text="@string/fill_survey_text"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/survey_polling_news_feed_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/love_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/ic_love" />
+
+                <CustomClass.RobotoRegularTextView
+                    android:id="@+id/survey_polling_like_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/item_survey_polling_news_feed_loveImageView"
+                    android:text="12"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:id="@+id/comment_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/ic_comment" />
+
+                <CustomClass.RobotoRegularTextView
+                    android:id="@+id/survey_polling_comment_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/item_survey_polling_news_feed_loveImageView"
+                    android:text="12"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/survey_polling_voted_filled_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="@string/you_have_filled_this_survey_text"
+                android:textAllCaps="true"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/survey_polling_voted_filled_label"
+                android:src="@drawable/ic_check_grey_fill" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

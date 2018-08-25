@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="survey_polling_green_color">#3ED091</color>
+    <color name="survey_polling_blue_color">#48A7FF</color>
+</resources>

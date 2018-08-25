@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/header_bg">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="DASHBOARD"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:id="@+id/menupanel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_drawer" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+
+            >
+
+            <ImageView
+                android:id="@+id/goto_calender"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/date" />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/goto_calender"
+                android:background="@drawable/noti" />
+
+            <TextView
+                android:id="@+id/searchcounter"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/goto_calender"
+                android:background="@drawable/notificationwhatonicon"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="6sp"
+                android:visibility="gone"
+
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/titlebar"
+        android:background="@drawable/header">
+
+        <TextView
+            android:id="@+id/whats_on_textview"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="WHAT'S ON TODAY"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/points_summery"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_bg"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="POINTS SUMMARY"
+            android:textSize="14dp"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pointslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/headerlayout"
+        android:background="#fed150">
+
+        <TextView
+            android:id="@+id/total_points_earned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Total Points earned 10000pts" />
+
+        <TextView
+            android:id="@+id/view_morelable"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:text="View More"
+            android:textColor="#444444"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pointslayout"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".4">
+
+            <RelativeLayout
+                android:id="@+id/relechart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/refresh"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/refrash" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:paddingTop="30dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/chart1"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/voilet_dot" />
+
+                        <TextView
+                            android:id="@+id/redeem_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Total Redeemed"
+                            android:textColor="#a4a4a4" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/redeemed_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="10000pts"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/yellow_bullet" />
+
+                        <TextView
+                            android:id="@+id/remaining_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Remaining Points"
+                            android:textColor="#a4a4a4" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/remaining_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="10000pts"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relechart"
+                android:layout_marginTop="30dp">
+
+                <RelativeLayout
+                    android:id="@+id/featuredRewardz_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/featured_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#ffffff">
+
+                        <utils.CircleImageView
+                            android:id="@+id/featured_reward_image"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/circle_birthday"
+                            app:border_color="#0179b8"
+                            app:border_width="4dp" />
+
+                        <TextView
+                            android:id="@+id/featured_rewardz_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/featured_reward_image"
+                            android:text="Map Voucher" />
+
+                        <TextView
+                            android:id="@+id/featured_rewardz_pts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:text="0 pts" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/featured_layout"
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/rewardz_points_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="0 More Points to get this Reward"
+
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/points_earned_today"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text="0 Points Earned on Date"
+                                android:textColor="#000000" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/viewallrewardz"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+
+                                android:background="@drawable/viewall"
+                                android:gravity="center"
+                                android:text="View Point Rewardz"
+                                android:textColor="#444444"
+                                android:textSize="10sp" />
+
+
+                            <TextView
+                                android:id="@+id/viewdiscountrewardz"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/viewall"
+                                android:gravity="center"
+                                android:text="View Discount Rewardz"
+                                android:textColor="#444444"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <!-- <RelativeLayout
+                         android:id="@+id/pointsearned"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:layout_below="@+id/featuredRewardz_layout">
+
+                         <TextView
+                             android:id="@+id/rewardz_points_textView"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="20dp"
+                             android:layout_marginTop="0dp"
+                             android:text="0 More Points to get this Reward"
+                             android:textSize="12sp"
+                             android:textColor="#000000" />
+
+                         <TextView
+                             android:id="@+id/viewallrewardz"
+                             android:layout_width="100dp"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_marginRight="10dp"
+                             android:layout_marginTop="5dp"
+                             android:background="@drawable/viewall"
+                             android:gravity="center"
+                             android:textColor="#444444"
+                             android:text="View all Rewards"
+                             android:textSize="10sp" />
+
+                         <TextView
+                             android:id="@+id/points_earned_today"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="20dp"
+                             android:layout_marginTop="5dp"
+                             android:textSize="12sp"
+                            android:layout_below="@+id/rewardz_points_textView"
+                             android:text="0 Points Earned on Date"
+                             android:textColor="#000000" />
+                     </RelativeLayout>-->
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:background="#303d46">
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/scroll_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/points_descrition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="5000 more points to become Elite"
+                android:textColor="#ffffff" />
+
+            <utils.GIFView
+                android:id="@+id/running_men"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="43dp" />
+
+            <LinearLayout
+                android:id="@+id/barlayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp">
+
+                <LinearLayout
+                    android:id="@+id/basicrelative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".33"
+                        android:background="#FFFD33"
+                        android:minHeight="10dip">
+                        <!--<ProgressBar
+                            android:id="@+id/bottomprogressbar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="false"
+                            android:max="500"
+                            android:maxHeight="15dip"
+                            android:minHeight="15dip"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/progressbar1" />-->
+                        <TextView
+                            android:id="@+id/basic_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="BASIC"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".33"
+                        android:background="#F7A82A"
+                        android:minHeight="10dip">
+                        <!-- <ProgressBar
+                             style="?android:attr/progressBarStyleHorizontal"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:indeterminate="false"
+                             android:max="500"
+                             android:maxHeight="15dip"
+                             android:minHeight="15dip"
+                             android:progress="375"
+                             android:progressDrawable="@drawable/progressbar2" />-->
+                        <TextView
+                            android:id="@+id/pro_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="PRO"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".33"
+                        android:background="#F05C21"
+                        android:minHeight="10dip">
+                        <!--  <ProgressBar
+                              style="?android:attr/progressBarStyleHorizontal"
+                              android:layout_width="130dp"
+                              android:layout_height="wrap_content"
+                              android:indeterminate="false"
+                              android:max="500"
+                              android:maxHeight="15dip"
+                              android:minHeight="15dip"
+                              android:progress="250"
+                              android:progressDrawable="@drawable/progressbar3" />-->
+                        <TextView
+                            android:id="@+id/elite_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="ELITE"
+                            android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <!--  <ProgressBar
+                          style="?android:attr/progressBarStyleHorizontal"
+                          android:layout_width="140dp"
+                          android:layout_height="wrap_content"
+                          android:indeterminate="false"
+                          android:max="500"
+                          android:maxHeight="15dip"
+                          android:minHeight="15dip"
+                          android:progress="125"
+                          android:progressDrawable="@drawable/progressbar4" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="240dp"
+                        android:paddingTop="8dp"
+                        android:text="500pts"
+                        android:textColor="#000000"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

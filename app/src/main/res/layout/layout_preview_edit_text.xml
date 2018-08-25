@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/preview_item_layout"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="30dp"
+              android:background="@drawable/layerlist_survey_polling_question_layout">
+
+    <CustomClass.RobotoRegularTextView
+        android:id="@+id/preview_title_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/dummy_question_preview_label1"
+        android:textColor="#2E2E2E"
+        android:textSize="16sp" />
+
+    <CustomClass.RobotoRegularEditText
+        android:id="@+id/preview_answer_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:gravity="center|left"
+        android:hint="@string/question_answer_hint"
+        android:inputType="textCapSentences"
+        android:textColorHint="#7A7A7A"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

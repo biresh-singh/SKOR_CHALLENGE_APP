@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_top_news_rootLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="12dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/item_top_news_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp" />
+
+    <LinearLayout
+        android:id="@+id/item_top_news_contentLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/square_purple"
+        android:orientation="vertical">
+
+        <CustomClass.RobotoRegularTextView
+            android:id="@+id/item_top_news_nowTextView"
+            android:layout_width="40dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#ee4f27"
+            android:gravity="center"
+            android:text="NOW"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:visibility="gone" />
+
+        <CustomClass.RobotoBoldTextView
+            android:id="@+id/item_top_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:text="Athletics championship boasting an array of international top track and field athletes."
+            android:textColor="#a25ea4"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/item_top_news_likeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:text="Like"
+                android:textSize="8dp" />
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/item_top_news_commentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/item_top_news_likeTextView"
+                android:text="Comment"
+                android:textSize="8dp" />
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/item_top_news_viewTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/item_top_news_commentTextView"
+                android:text="View"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CustomClass.RobotoBoldTextView
+                android:id="@+id/item_top_news_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:text="CHALLENGE"
+                android:textSize="8dp" />
+
+            <ImageView
+                android:id="@+id/item_top_news_bookmarkImageView"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/ic_bookmark_off" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

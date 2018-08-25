@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentlayout"
+    android:background="#009688"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/header_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/trainingtcon"/>
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/header_image"
+            android:paddingLeft="12dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:paddingTop="5dp"
+            android:text="Events and Training"/>
+
+        <TextView
+            android:id="@+id/all_items"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+
+
+            android:gravity="center"
+            android:background="@drawable/view_all"
+            android:text="VIEW ALL"/>
+
+        <TextView
+            android:id="@+id/defaulttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_title"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:text="No Appointment today"
+            android:textSize="12sp"
+            android:paddingBottom="60dp"
+            android:paddingLeft="12dp"
+            android:layout_marginLeft="60dp"/>
+
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp">
+         <ImageView
+             android:id="@+id/header_subimage"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:background="@drawable/trainingoncommunication"
+             android:layout_marginLeft="30dp"/>
+         <TextView
+             android:id="@+id/header_subtitle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/header_subimage"
+             android:paddingLeft="20dp"
+             android:textColor="#ffffff"
+             android:textSize="16dp"
+             android:text="dfkjdsfg fgkdfogpdfk dpgkdfkdfgopfdkhgk"/>
+
+     </RelativeLayout>
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp"
+         android:paddingBottom="40dp">
+         <ImageView
+             android:id="@+id/header_subimage2"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:background="@drawable/training_subimage"
+             android:layout_marginLeft="30dp"/>
+         <TextView
+             android:id="@+id/header_subtitle2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="#ffffff"
+             android:textSize="16dp"
+             android:layout_toRightOf="@+id/header_subimage2"
+             android:paddingLeft="20dp"
+             android:text="dfkdslkgj  fdlgktlh tht khgh lhmfg hghlk"/>
+
+     </RelativeLayout>-->
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/approve_message_title"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="@string/approve_message_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dialog_reward_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="@string/approve_message_creator_reward_header"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dialog_creator_reward_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/white_background_gray_stroke_rounded_corner"
+        android:hint="@string/approve_message_reward_placeholder"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_horizontal"
+        android:paddingRight="20dp"
+        android:inputType="number"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#CECECE"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="@string/approve_message_reward_header"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dialog_reward_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/white_background_gray_stroke_rounded_corner"
+        android:hint="@string/approve_message_reward_placeholder"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_horizontal"
+        android:paddingRight="20dp"
+        android:inputType="number"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#CECECE"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/dialog_done_button"
+        android:layout_width="156dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_survey_polling_item_red_button"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/done_text"
+        android:textColor="@drawable/selector_survey_polling_item_red_button_text_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

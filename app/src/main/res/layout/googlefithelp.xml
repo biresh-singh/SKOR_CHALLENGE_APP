@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+   
+   
+        android:background="@drawable/transprent_bg" >
+      <ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      >
+      <RelativeLayout android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingBottom="60dp">
+        <ImageView
+            android:id="@+id/fit_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/fit_icon" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/fit_icon"
+            android:gravity="center_horizontal"
+            android:text="Connect with google fit app.This will make a healthy change in your life by becoming more active, aware and motivated."
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/fit_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="25dp"
+            >
+
+            <TextView
+                android:id="@+id/gogolefitapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                 android:paddingLeft="20dp"
+                android:text="Google Fit App Installed "
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/googlefitcheck"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/googlefitcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                  android:background="@drawable/no"
+             />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/locationview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fit_enable"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:paddingLeft="20dp"
+                android:text="Location Services Enable "
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/locationcheck"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/locationcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                  android:background="@drawable/no"
+       />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/authenticationenable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationview"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                 android:paddingLeft="20dp"
+                android:text="Autheticated to Google fit "
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/autheticationcheck"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/autheticationcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/no"
+              />
+        </RelativeLayout>
+  
+     <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_below="@+id/authenticationenable"
+            android:gravity="center_horizontal"
+            android:text="Note: To ensure that this app functions optimally on your phone, download Google Fit and sync this app with the same gmail account as Google Fit."
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+     </RelativeLayout>
+     </ScrollView>
+
+        <Button
+            android:id="@+id/gotodashboard"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/checkin_background"
+            android:text="Go To Dashbard"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+ 
+
+</LinearLayout>

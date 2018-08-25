@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_own_message_linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/right_bubble"
+        android:backgroundTint="@color/light_blue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/item_own_message_webDescriptionLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/attachment"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/item_own_message_webImage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/item_own_message_webTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center|left"
+                    android:text="web title"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_own_message_webDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="web description"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_own_message_documentContactLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/attachment"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_own_message_documentContactImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <utils.ArialBoldTextView
+                    android:id="@+id/item_own_message_documentContactName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:singleLine="true"
+                    android:text="contact/document name"
+                    android:textColor="#292929"
+                    android:textSize="11dp" />
+
+                <utils.ArialRegularTextView
+                    android:id="@+id/item_own_message_documentSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:maxLines="2"
+                    android:text="document size"
+                    android:textColor="#b6b6b6"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/item_own_message_attachment"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/item_own_message_playButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/btn_play" />
+        </FrameLayout>
+
+        <utils.ArialRegularTextView
+            android:id="@+id/item_own_message_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/item_own_message_timeStampAndReadyBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:25 PM"
+            android:textColor="@color/light_gray"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+

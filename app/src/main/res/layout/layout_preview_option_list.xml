@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preview_item_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:background="@drawable/layerlist_survey_polling_question_layout">
+
+    <CustomClass.RobotoRegularTextView
+        android:id="@+id/preview_title_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/dummy_question_preview_label1"
+        android:textColor="#2E2E2E"
+        android:textSize="16sp" />
+
+    <CustomClass.RobotoRegularTextView
+        android:id="@+id/preview_multiple_option_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:hint="@string/question_multiple_option_hint"
+        android:textColorHint="#7A7A7A"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:visibility="visible"/>
+
+    <RadioGroup
+        android:id="@+id/preview_option_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            layout="@layout/layout_preview_option_radiobutton"/>-->
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/preview_option_check_box_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<include layout="@layout/layout_preview_option_checkbox"/>-->
+    </LinearLayout>
+
+    <CustomClass.RobotoRegularEditText
+        android:id="@+id/preview_option_others_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_survey_polling_item_white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:hint="@string/question_others"
+        android:inputType="textCapSentences"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+</LinearLayout>

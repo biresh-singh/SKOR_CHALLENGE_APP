@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgApp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTeam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+    <CustomClass.RobotoRegularTextView
+        android:id="@+id/txtNoDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:text="No Challenge Available"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        />
+</LinearLayout>

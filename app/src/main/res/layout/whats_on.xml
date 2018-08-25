@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffffff">
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DASHBOARD"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/toolbar_title" />
+        <LinearLayout
+            android:id="@+id/menupanel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_drawer"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+
+            >
+            <ImageView
+                android:id="@+id/goto_calender"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/date"
+                />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/goto_calender"
+                android:background="@drawable/noti"
+                />
+            <TextView
+                android:id="@+id/searchcounter"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="18dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="6sp"
+                android:layout_marginLeft="22dp"
+                android:layout_toRightOf="@+id/goto_calender"
+                android:background="@drawable/notificationwhatonicon" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/headerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/header"
+        >
+        <TextView
+            android:id="@+id/whats_on_textview"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:text="WHAT'S ON TODAY"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:clickable="false"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_bg"/>
+
+        <TextView
+            android:id="@+id/points_summery"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:text="POINTS SUMMARY"
+            android:textSize="14dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_below="@+id/headerlayout"
+        android:orientation="vertical"
+    >
+       <utils.DynamicListView
+        android:id="@+id/listview"
+        android:background="#0000"
+        android:layout_gravity="fill_vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+     />
+    </LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/myCoordinatorLayout"
+        android:layout_alignParentBottom="true">
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

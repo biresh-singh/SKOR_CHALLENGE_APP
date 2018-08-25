@@ -1,0 +1,234 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- General -->
+    <string name="save_text">Save</string>
+    <string name="delete_text">Delete</string>
+    <string name="back_text">Back</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="add_text">Add</string>
+    <string name="done_text">Done</string>
+    <string name="publish_text">Publish</string>
+    <string name="submit_text">Submit</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+    <string name="new_text">New</string>
+    <string name="review_text">Review</string>
+    <string name="edit_text">Edit</string>
+    <string name="post_text">Post</string>
+    <string name="send_text">Send</string>
+    <string name="confirmation_text">Confirmation</string>
+
+    <!-- Fragment News Feed -->
+    <string name="write_an_article_text">Write an Article</string>
+    <string name="create_a_survey_polling_text">Create a Polling/Survey</string>
+
+    <!-- Activity Create Survey Polling -->
+    <string name="create_survey_polling_header_title">Polling/Survey</string>
+    <string name="create_survey_text">Create Survey</string>
+    <string name="create_polling_text">Create Polling</string>
+    <string name="verify_request_text">Verify Request</string>
+    <string name="my_survey_text">My Survey</string>
+
+    <!-- Activity Create Survey Polling Detail -->
+    <string name="create_survey_header_title">Create Survey</string>
+    <string name="create_polling_header_title">Create Polling</string>
+    <string name="restriction_text">Restriction</string>
+    <string name="restriction_hint">Set restriction</string>
+    <string name="start_date_text">Start Date</string>
+    <string name="start_date_hint">Set start date</string>
+    <string name="start_date_value">%1$s 00:00</string>
+    <string name="end_date_text">End Date</string>
+    <string name="end_date_hint">Set end date</string>
+    <string name="end_date_value">%1$s 23:59</string>
+    <string name="category_text">Category</string>
+    <string name="dummy_restriction_item_text">Male</string>
+    <string name="category_events_text">Events</string>
+    <string name="category_sales_text">Sales</string>
+    <string name="category_contest_text">Contest</string>
+    <string name="category_plus_text">+</string>
+    <string name="category_add_header_title">+ Add Category</string>
+    <string name="category_add_hint">Type new Category</string>
+    <string name="survey_title_hint">Survey Title</string>
+    <string name="polling_title_hint">Polling Title</string>
+    <string name="description_hint">Description/Welcome</string>
+    <string name="survey_rewards_text">Survey Rewards</string>
+    <string name="polling_rewards_text">Polling Rewards</string>
+    <string name="survey_rewards_hint">Reward point amount</string>
+    <string name="add_questions_text">Add Questions</string>
+    <string name="x_questions_text">%1$d questions</string>
+    <string name="x_question_text">%1$d question</string>
+    <string name="add_questions_hint">Edit Questions</string>
+    <string name="restriction_validation_empty_text">Restriction is required</string>
+    <string name="start_date_validation_empty_text">Start date is required</string>
+    <string name="end_date_validation_empty_text">End date is required</string>
+    <string name="end_date_validation_after_start_date_text">End date should be after start date</string>
+    <string name="category_validation_choosed_text">Select a category</string>
+    <string name="category_add_validation_empty_text">Category name is required</string>
+    <string name="survey_title_validation_empty_text">Survey title is required</string>
+    <string name="polling_title_validation_empty_text">Polling title is required</string>
+    <string name="survey_description_validation_empty_text">Survey description is required</string>
+    <string name="survey_rewards_validation_empty_text">Survey rewards is required</string>
+    <string name="survey_rewards_validation_number_text">Survey rewards must be a number</string>
+    <string name="add_question_validation_empty_text">Question is required</string>
+    <string name="create_survey_confirmation_text">Are you sure to submit this survey for admin\'s approval? You cannot edit this polling once submitted.</string>
+    <string name="create_polling_confirmation_text">Are you sure to submit this polling for admin\'s approval? You cannot edit this polling once submitted.</string>
+
+    <!-- Activity Survey Polling Restriction -->
+    <string name="restriction_header_title">Restriction</string>
+    <string name="gender_text">Gender</string>
+    <string name="gender_all_text">All Gender</string>
+    <string name="gender_male_text">Male</string>
+    <string name="gender_female_text">Female</string>
+    <string name="status_text">Status</string>
+    <string name="status_all_text">All Status</string>
+    <string name="status_single_text">Single</string>
+    <string name="status_married_text">Married</string>
+    <string name="status_divorced_text">Divorced</string>
+    <string name="age_range_text">Age Range</string>
+    <string name="age_range_hint">20 - 50 Year Old</string>
+    <string name="range_20_text">20</string>
+    <string name="range_50_text">50</string>
+    <string name="department_text">Department</string>
+    <string name="department_all_text">All Department</string>
+    <string name="department_marketing_text">Marketing</string>
+    <string name="department_human_resources_text">Human Resources</string>
+    <string name="department_business_dev_text">Business Dev</string>
+    <string name="department_research_text">Research</string>
+    <string name="department_add_header_title">+ Add Department</string>
+    <string name="department_add_hint">Type new department</string>
+
+    <!-- Activity Add Questions -->
+    <string name="add_questions_header_title">Add Questions</string>
+    <string name="question_add_a_question">+ Add a question</string>
+    <string name="question_reach_maximum_survey_question">You have reached the maximum of\n5 questions per survey</string>
+    <string name="question_reach_maximum_polling_question">You have reached the maximum of\n1 question per polling</string>
+    <string name="question_multiple_choice">Multiple Choice</string>
+    <string name="question_multiple_choice_with_other">Multiple Choice with "Other"</string>
+    <string name="question_yes_no_question">Yes/No</string>
+    <string name="question_select_one_or_more">Select One or More</string>
+    <string name="question_text_question">Text</string>
+    <string name="question_delete_confirmation">Are you sure you want to delete this question?</string>
+    <string name="add_questions_validate_input_text">All parameter must be filled</string>
+    <string name="add_questions_validate_character_text">All option cannot containt character |</string>
+
+    <!-- Layout Question Card -->
+    <string name="question_title_hint">Type your question</string>
+    <string name="question_multiple_option_hint">Select one or more</string>
+    <string name="question_answer_hint">Answer</string>
+    <string name="question_option">Option</string>
+    <string name="question_others">Others: Type answer</string>
+    <string name="question_add_more_option">+ Add more option</string>
+    <string name="question_email_answer_hint">(See the answers by email)</string>
+
+    <!-- Activity Survey Polling Preview -->
+    <string name="preview_header_title">Preview</string>
+    <string name="dummy_preview_title">Survey Liburan Impian</string>
+    <string name="dummy_preview_description">Sebentar lagi office outing tahunan akan berlangsung. Yuk, isi survey dulu untuk menentukan tujuannya.</string>
+
+    <!-- Layout Survey Polling Preview -->
+    <string name="dummy_question_preview_label1">Menurut Anda, seperti apa yang liburan yang sempurna?</string>
+    <string name="dummy_question_preview_label2">Apakah Anda suka pergi ke luar kota?</string>
+    <string name="dummy_question_preview_answer">A. Pergi ke tempat alam</string>
+    <string name="dummy_question_percentage">60%</string>
+
+    <!-- Activity Create Survey Done -->
+    <string name="create_survey_polling_done_header_title">Done</string>
+    <string name="create_survey_done_title">Your Survey is Done!</string>
+    <string name="create_polling_done_title">Your Polling is Done!</string>
+    <string name="create_survey_done_top_description">Your survey has been saved and is waiting for admin\'s approval.</string>
+    <string name="create_survey_done_bottom_description">The survey result will be sent to your email on the completion date.</string>
+    <string name="create_polling_done_top_description">Your polling has been saved and is waiting for admin\'s approval.</string>
+    <string name="create_polling_done_bottom_description">The polling result will be sent to your email on the completion date.</string>
+
+    <!-- Activity Survey Polling Thank You -->
+    <string name="survey_thank_you_header_title">Survey</string>
+    <string name="polling_thank_you_header_title">Polling</string>
+    <string name="thank_you_text">Thank You!</string>
+    <string name="thank_you_polling_text">Thank You for participating.</string>
+    <string name="thank_you_survey_text">Thank You for filling up the survey.</string>
+    <string name="you_have_received_text">You have received a reward of</string>
+    <string name="plus_x_pts_text">+%1$d Pts</string>
+
+    <!-- Activity My Survey -->
+    <string name="my_survey_title">My Survey</string>
+
+    <!-- Activity Survey Verify Request -->
+    <string name="survey_polling_verify_request_header_title">Survey/Poll Requests</string>
+
+    <!-- Activity Survey Polling Reject -->
+    <string name="survey_polling_reject_header_title">Reject</string>
+
+    <!-- Activity Survey Polling Fill -->
+    <string name="survey_fill_header_title">Survey</string>
+    <string name="polling_fill_header_title">Polling</string>
+    <string name="fill_questions_validate_input_text">All question must be answered.</string>
+
+    <!-- Activity Polling See Result -->
+    <string name="survey_see_result_header_title">Survey</string>
+    <string name="polling_see_result_header_title">Polling</string>
+    <string name="survey_has_ended_text">This survey has ended (Total &lt;b>%1$d Votes&lt;/b>).</string>
+    <string name="polling_has_ended_text">This polling has ended (Total &lt;b>%1$d Votes&lt;/b>).</string>
+    <string name="share_result_text">The result has been sent to your email</string>
+
+    <!-- Layout Polling Option -->
+    <string name="your_choice_text">Your Choice</string>
+    <string name="posted_by_on_text">Posted by &lt;b>%1$s&lt;/b> on %2$s</string>
+    <string name="dummy_polling_option_text">A. Jalan-jalan ke luar kota/negeri</string>
+    <string name="voted_view_text">Vote %1$d  View %2$d</string>
+    <string name="view_all_comment_text">View All Comments (%1$d)</string>
+    <string name="write_your_comment_hint">Write your comment</string>
+    <string name="comment">Comment</string>
+    <string name="comment_validate_text">Comment must be filled</string>
+
+    <!-- Activity Survey Polling Request Detail -->
+    <string name="survey_request_detail_header_title">Survey</string>
+    <string name="polling_request_detail_header_title">Polling</string>
+    <string name="survey_ended_send_email_text">This survey has ended.&lt;br/>Send the result now to your email.&lt;br/>(Total &lt;b>%1$d Recipients&lt;/b>)</string>
+    <string name="survey_ended_text">This survey has ended.&lt;br/>(Total &lt;b>%1$d Recipients&lt;/b>)</string>
+    <string name="polling_ended_send_email_text">This polling has ended.&lt;br/>Send the result now to your email.&lt;br/>(Total &lt;b>%1$d Recipients&lt;/b>)</string>
+    <string name="polling_ended_text">This polling has ended.&lt;br/>(Total &lt;b>%1$d Recipients&lt;/b>)</string>
+    <string name="requested_by_text">Requested by %1$s, %2$s</string>
+    <string name="survey_deadline_text">Survey Deadline</string>
+    <string name="polling_deadline_text">Polling Deadline</string>
+    <string name="dummy_survey_deadline_value">21 Dec 2018, 15:12</string>
+
+    <!-- Item Survey Polling Request -->
+    <string name="survey_about_text">Survey about</string>
+    <string name="survey_text">Survey</string>
+    <string name="polling_about_text">Polling about</string>
+    <string name="polling_text">Polling</string>
+    <string name="verify_request_by_time_text">By %1$s, %2$s</string>
+    <string name="verify_request_recipients_on_going_text">%1$d Recipients (on going)</string>
+    <string name="verify_request_recipients_text">%1$d Recipients</string>
+
+    <!-- Item Survey Polling News Feed -->
+    <string name="posted_on_text">Posted on %1$s</string>
+    <string name="voted_viewed_by_text">Voted by %1$d | Viewed by %2$d</string>
+    <string name="see_result_text">See Result</string>
+    <string name="vote_poll_text">Vote This Poll</string>
+    <string name="fill_survey_text">Fill Survey</string>
+    <string name="you_have_voted_text">You Have Voted</string>
+    <string name="you_have_filled_this_survey_text">You Have Filled This Survey</string>
+    <string name="get_x_pts_text">GET +%1$d PTS</string>
+
+    <!-- Layout Survey Polling Review -->
+    <string name="review_title_question">How will you review this?</string>
+    <string name="approve_text">Approve</string>
+    <string name="reject_text">Reject</string>
+
+    <!-- Activity Survey Polling Verify Request Detail -->
+    <string name="reject_message_title">Rejected</string>
+    <string name="reject_message_content">You have rejected this polling.\nA notification will be sent to the requestor.</string>
+    <string name="reject_comment_validation_empty_text">Rejection comment/reason is required</string>
+    <string name="approve_message_title">Approved</string>
+    <string name="approve_message_content">You have approved this polling/survey and it will be published to public for voting.</string>
+    <string name="approve_message_creator_reward_header">Would you like to give reward points to the survey/poll creator?</string>
+    <string name="approve_message_reward_header">Would you like to give reward points to the survey/poll participant?</string>
+    <string name="approve_message_reward_placeholder">Type reward points amount</string>
+    <string name="approve_message_reward_validation">Reward points must be a number</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>
